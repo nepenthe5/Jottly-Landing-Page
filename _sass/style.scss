@@ -1,12 +1,13 @@
+@import  "csswizardry-grids";
 * {margin:0;padding:0;box-sizing:border-box;}
 body {
     background: #fff;
     font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 24px; /*Base font size=18pt=24px*/
+    font-size: 18px; /*Base font size=18pt=24px !Edited to 18px*/
     color: #784213; /*light brown*/
 }
 header {
-  background: #fff url(images/heroimage.jpg) no-repeat center center;
+  background: #fff url(../images/heroimage.jpg) no-repeat center center;
   background-size: cover;
   min-height: 900px;
   padding: 1em 0 5em 1em;
@@ -24,4 +25,11 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   font-size: 1.555em;
   color: #784213; /*light brown*/
 }
+.wrapper {
+  margin: 0 auto 0 auto;
+  width: 80%;
+  position: relative;
+}
+/*Copied CSS from PSD below*/
+
 
