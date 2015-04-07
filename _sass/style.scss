@@ -12,24 +12,30 @@ header {
   min-height: 900px;
   padding: 1em 0 5em 1em;
 }
-#main-headline, h1 {
-  font-size: 2.8888em;/*Main headers=52pt=104px=4.333em*/
+#main-headline {
+  margin: 0 auto 0 auto;
+}
+#main-headline h1{
+  ont-size: 1.5em;/*Main headers=52pt=52px=2.8888em at large*/
   color: #663f1c;/*dark brown*/
   font-weight: bold;
-  margin: 4em auto 0 0;
+  margin: 2em auto 0 auto;
 }
 h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
-  font-size: 2.222em;
+  font-size: 1.2em; //At large=2.222em
   color: #784213; /*light brown*/
 }
 .main-text, h3 { /*subheader in //HEADER AKA class .main-text*/
-  font-size: 1.5555em;
+  font-size: 1em; //At large=1.5555em
   color: #784213; /*light brown*/
   margin: 1em 0 1em 0;
 }
 // Header
 #logo {
-  float: left;
+  // float: left;
+  // width: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 #logo img {
    height: 100%;
@@ -55,10 +61,19 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   background-color: #fde1a2;
   padding-top: 8em;
   padding-bottom: 8em;
+  margin-left: auto;
+  margin-right: auto;
 }
-#message img {
-   height: 100%;
-   width: 100%;
+#atobparent {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6em;
+}
+#atobparent img {
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #message h1 {
   text-align: center;
@@ -66,11 +81,12 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
 // Social Proof Section
 // Features
 // Footer
-.wrapper {
-  margin: 0 auto 0 auto;
-  width: 940px;
-  position: relative;
-}
+
+// .wrapper {   <---Add in later in MQ
+//   margin: 0 auto 0 auto;
+//   width: 940px; 
+//   position: relative;
+// }
 .clearfix:after{
   visibility: hidden;
   display: block;
