@@ -389,6 +389,10 @@ h2 {
 #logo {
   float: left; }
 
+#logo img {
+  height: 100%;
+  width: 100%; }
+
 #toplogin-btn {
   border-width: 1px;
   border-color: #784213;
@@ -398,6 +402,11 @@ h2 {
   float: right;
   width: 141px;
   height: 55px; }
+
+#toplogin-btn p {
+  position: absolute;
+  left: 845px;
+  top: 15px; }
 
 #message {
   background-color: #fde1a2;

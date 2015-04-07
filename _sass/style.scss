@@ -31,6 +31,10 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
 #logo {
   float: left;
 }
+#logo img {
+   height: 100%;
+   width: 100%;
+}
 #toplogin-btn {
   border-width: 1px;
   border-color: rgb(120, 66, 19);
@@ -38,12 +42,13 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   float: right;
-  // position: absolute;
-  // left: 929px;
-  // top: 73px;
   width: 141px;
   height: 55px;
-  // z-index: 24;
+}
+#toplogin-btn p {
+  position: absolute;
+  left: 845px;
+  top: 15px;
 }
 // Message Section
 #message {
