@@ -27,10 +27,52 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   color: #784213; /*light brown*/
   margin: 1em 0 1em 0;
 }
+// Header
+#logo {
+  float: left;
+}
+#toplogin-btn {
+  border-width: 1px;
+  border-color: rgb(120, 66, 19);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  float: right;
+  // position: absolute;
+  // left: 929px;
+  // top: 73px;
+  width: 141px;
+  height: 55px;
+  // z-index: 24;
+}
+// Message Section
+#message {
+  background-color: #fde1a2;
+  padding-top: 8em;
+  padding-bottom: 8em;
+}
+#message img {
+   height: 100%;
+   width: 100%;
+}
+#message h1 {
+  text-align: center;
+}
+// Social Proof Section
+// Features
+// Footer
 .wrapper {
   margin: 0 auto 0 auto;
   width: 940px;
   position: relative;
+}
+.clearfix:after{
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0;
 }
 /*Copied CSS from PSD below*/
 
