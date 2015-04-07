@@ -99,22 +99,6 @@ $use-silent-classes:    false !default;
 $push:                  false !default;
 $pull:                  false !default;
 
-
-/**
- * Using `inline-block` means that the grid items need their whitespace removing
- * in order for them to work correctly. Set the following to true if you are
- * going to achieve this by manually removing/commenting out any whitespace in
- * your HTML yourself.
- *
- * Setting this to false invokes a hack which cannot always be guaranteed,
- * please see the following for more detail:
- *
- * github.com/csswizardry/csswizardry-grids/commit/744d4b23c9d2b77d605b5991e54a397df72e0688
- * github.com/csswizardry/inuit.css/issues/170#issuecomment-14859371
- */
-$use-markup-fix:        true !default;
-
-
 /**
  * Define your breakpoints. The first value is the prefix that shall be used for
  * your classes (e.g. `.palm--one-half`), the second value is the media query
@@ -122,8 +106,8 @@ $use-markup-fix:        true !default;
  */
 $breakpoints: (
     'small' '(min-width: 480px)',
-    'medium' '(min-width: 750px)'
-    'large' '(min-width: 999px)'
+    'medium' '(min-width: 750px)',
+    'large' '(min-width: 999px)',
     'extralarge' '(min-width: 1199px)'
 ) !default;
 
@@ -138,9 +122,9 @@ $breakpoints: (
  * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
  * have been set to ‘true’.
  */
-$breakpoint-has-widths: ('lap', 'portable') !default;
-$breakpoint-has-push:   ('lap', 'portable') !default;
-$breakpoint-has-pull:   ('lap', 'portable') !default;
+$breakpoint-has-widths: ('small', 'medium', 'large', 'extralarge') !default;
+$breakpoint-has-push:   ('small', 'medium', 'large', 'extralarge') !default;
+$breakpoint-has-pull:   ('small', 'medium', 'large', 'extralarge') !default;
 
 
 /**
@@ -194,7 +178,19 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
     }
 }
 
+/**
+ * Clear all floats
+*/
 
+@mixin clearfix {
+  &:before,&:after {
+      content: "";
+      display: table;
+  }
+  &:after {
+      clear: both;
+  }
+}
 
 
 
@@ -211,19 +207,9 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
     margin:0;                       /* [2] */
     padding:0;                      /* [2] */
     margin-left:-$gutter;           /* [3] */
-    @if not $use-markup-fix {
-        letter-spacing:-0.31em;
-    }
-}
 
-@if not $use-markup-fix {
-    /* Opera hack */
-    .opera:-o-prefocus,
-    #{$class-type}grid {
-        word-spacing:-0.43em;
-    }
+    @include clearfix;
 }
-
 
     /**
      * 1. Cause columns to stack side-by-side.
@@ -233,18 +219,12 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
      * 5. Required to combine fluid widths and fixed gutters.
      */
     #{$class-type}grid__item {
-        display:inline-block;           /* [1] */
+        float: left;
+        min-height: 1px;
         padding-left:$gutter;           /* [2] */
         vertical-align:top;             /* [3] */
         @if $mobile-first {
             width:100%;                 /* [4] */
-        }
-        -webkit-box-sizing:border-box;  /* [5] */
-           -moz-box-sizing:border-box;  /* [5] */
-                box-sizing:border-box;  /* [5] */
-        @if not $use-markup-fix {
-            letter-spacing:normal;
-            word-spacing:normal;
         }
     }
 
