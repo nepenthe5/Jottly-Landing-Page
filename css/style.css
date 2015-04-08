@@ -748,14 +748,13 @@ body {
 header {
   background: #fff url(../images/heroimage.jpg) no-repeat center center;
   background-size: cover;
-  min-height: 900px;
-  padding: 1em 0 5em 1em; }
+  min-height: 900px; }
 
 #main-headline {
   margin: 0 auto 0 auto; }
 
 #main-headline h1 {
-  ont-size: 1.5em;
+  font-size: 1.5em;
   /*Main headers=52pt=52px=2.8888em at large*/
   color: #663f1c;
   /*dark brown*/
@@ -768,20 +767,19 @@ h2 {
   color: #784213;
   /*light brown*/ }
 
-.main-text, h3 {
+#main-text, h3 {
   /*subheader in //HEADER AKA class .main-text*/
   font-size: 1em;
   color: #784213;
   /*light brown*/
   margin: 1em 0 1em 0; }
 
-#logo {
-  margin-left: auto;
-  margin-right: auto; }
-
 #logo img {
-  height: 100%;
-  width: 100%; }
+  height: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
 
 #toplogin-btn {
   border-width: 1px;

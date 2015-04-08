@@ -10,13 +10,13 @@ header {
   background: #fff url(../images/heroimage.jpg) no-repeat center center;
   background-size: cover;
   min-height: 900px;
-  padding: 1em 0 5em 1em;
+  //padding: 1em 0 5em 0;
 }
 #main-headline {
   margin: 0 auto 0 auto;
 }
 #main-headline h1{
-  ont-size: 1.5em;/*Main headers=52pt=52px=2.8888em at large*/
+  font-size: 1.5em;/*Main headers=52pt=52px=2.8888em at large*/
   color: #663f1c;/*dark brown*/
   font-weight: bold;
   margin: 2em auto 0 auto;
@@ -25,7 +25,7 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   font-size: 1.2em; //At large=2.222em
   color: #784213; /*light brown*/
 }
-.main-text, h3 { /*subheader in //HEADER AKA class .main-text*/
+#main-text, h3 { /*subheader in //HEADER AKA class .main-text*/
   font-size: 1em; //At large=1.5555em
   color: #784213; /*light brown*/
   margin: 1em 0 1em 0;
@@ -34,12 +34,14 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
 #logo {
   // float: left;
   // width: auto;
-  margin-left: auto;
-  margin-right: auto;
+  
 }
 #logo img {
-   height: 100%;
-   width: 100%;
+  height: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 #toplogin-btn {
   border-width: 1px;
