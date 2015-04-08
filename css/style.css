@@ -750,6 +750,9 @@ header {
   background-size: cover;
   min-height: 900px; }
 
+#top-header {
+  padding-top: 2em; }
+
 #main-headline {
   margin: 0 auto 0 auto; }
 
@@ -759,7 +762,8 @@ header {
   color: #663f1c;
   /*dark brown*/
   font-weight: bold;
-  margin: 2em auto 0 auto; }
+  margin: 2em auto 0 auto;
+  text-align: center; }
 
 h2 {
   /*subheadings in //FEATURES and question at top of //FOOTER*/
@@ -772,7 +776,14 @@ h2 {
   font-size: 1em;
   color: #784213;
   /*light brown*/
-  margin: 1em 0 1em 0; }
+  margin: 1em 0 1em 0;
+  text-align: center; }
+
+#main-text p {
+  text-align: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto; }
 
 #logo img {
   height: auto;

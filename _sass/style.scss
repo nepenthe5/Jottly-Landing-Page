@@ -9,8 +9,11 @@ body {
 header {
   background: #fff url(../images/heroimage.jpg) no-repeat center center;
   background-size: cover;
-  min-height: 900px;
+  min-height: 900px; //900px at max in Media Query, smaller at mobile?
   //padding: 1em 0 5em 0;
+}
+#top-header {
+    padding-top: 2em;
 }
 #main-headline {
   margin: 0 auto 0 auto;
@@ -20,6 +23,7 @@ header {
   color: #663f1c;/*dark brown*/
   font-weight: bold;
   margin: 2em auto 0 auto;
+  text-align: center;
 }
 h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   font-size: 1.2em; //At large=2.222em
@@ -29,6 +33,13 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   font-size: 1em; //At large=1.5555em
   color: #784213; /*light brown*/
   margin: 1em 0 1em 0;
+  text-align: center;
+}
+#main-text p {
+  text-align: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 // Header
 #logo {
