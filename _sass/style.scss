@@ -6,6 +6,7 @@ body {
     font-size: 18px; /*Base font size=18pt=24px !Edited to 18px*/
     color: #784213; /*light brown*/
 }
+// HEADER
 header {
   background: #fff url(../images/heroimage.jpg) no-repeat center center;
   background-size: cover;
@@ -41,7 +42,6 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   margin-left: auto;
   margin-right: auto;
 }
-// Header
 #logo img {
   height: auto;
   width: 50%;
@@ -49,7 +49,7 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   margin-right: auto;
   display: block;
 }
-.login-div {
+.outerbtn-div {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -60,7 +60,6 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   border-style: solid;
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  //float: right;
   width: 141px;
   height: 55px;
   margin: 2em auto 0 auto;
@@ -68,6 +67,35 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
 #toplogin-btn p {
   text-align: center;
   margin-top: .7em;
+}
+#input-top {
+  border-width: 1px;
+  border-color: rgb(120, 66, 19);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 72px;
+  margin: 2em auto 0 auto;
+}
+#input-top p {
+  text-align: center;
+  margin-top: 1.2em;
+}
+#tryitbtn-top {
+  border-width: 1px;
+  border-color: rgb(120, 66, 19);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(0, 71, 178);
+  width: 238px;
+  height: 70px;
+  margin: 1em auto 0 auto;
+}
+#tryitbtn-top p {
+  text-align: center;
+  margin-top: 1.2em;
+  color: #fff;
 }
 // Message Section
 #message {
@@ -80,13 +108,13 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
 #atobparent {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 6em;
 }
 #atobparent img {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
+  display: block;
 }
 #message h1 {
   text-align: center;

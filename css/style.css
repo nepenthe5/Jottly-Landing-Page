@@ -792,7 +792,7 @@ h2 {
   margin-right: auto;
   display: block; }
 
-.login-div {
+.outerbtn-div {
   margin-left: auto;
   margin-right: auto;
   width: 100%; }
@@ -811,6 +811,35 @@ h2 {
   text-align: center;
   margin-top: .7em; }
 
+#input-top {
+  border-width: 1px;
+  border-color: #784213;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: white;
+  width: 300px;
+  height: 72px;
+  margin: 2em auto 0 auto; }
+
+#input-top p {
+  text-align: center;
+  margin-top: 1.2em; }
+
+#tryitbtn-top {
+  border-width: 1px;
+  border-color: #784213;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #0047b2;
+  width: 238px;
+  height: 70px;
+  margin: 1em auto 0 auto; }
+
+#tryitbtn-top p {
+  text-align: center;
+  margin-top: 1.2em;
+  color: #fff; }
+
 #message {
   background-color: #fde1a2;
   padding-top: 8em;
@@ -824,10 +853,11 @@ h2 {
   margin-bottom: 6em; }
 
 #atobparent img {
-  height: 100%;
-  width: 100%;
+  height: auto;
+  width: 90%;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  display: block; }
 
 #message h1 {
   text-align: center; }
