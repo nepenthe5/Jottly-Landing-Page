@@ -108,6 +108,7 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
 #atobparent {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 4em;
 }
 #atobparent img {
   height: auto;
@@ -122,12 +123,16 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
 // Social Proof Section
 #socialproof {
   background-color: #0047b2;
-  padding-top: 4em;
+  padding-top: 9em;
   padding-bottom: 4em;
 }
 .headshot img{
   height: 100%;
   width: 100%;
+}
+.socialtext {
+  margin: 1.5em 1.5em 5em 1.5em;
+  text-align: center;
 }
 .socialtext p{
   color: #fff;
@@ -136,7 +141,18 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   margin-left: auto;
   margin-right: auto;
 }
+.firstsocialp {
+  margin-bottom: 1em;
+}
 // Features
+#features h1 {
+  margin-top: 4em;
+  text-align: center;
+}
+.featuretext {
+  margin: 1.5em 1.5em 5em 1.5em;
+  text-align: center;
+}
 // Footer
 
 // .wrapper {   <---Add in later in MQ
