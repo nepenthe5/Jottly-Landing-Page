@@ -1,57 +1,970 @@
-/*
-Sass::SyntaxError: You may not @extend an outer selector from within @media.
-You may only @extend selectors within the same directive.
-From "@extend .small--three-quarters" on line 394 of Github/Jottly-Landing-Page/_sass/_csswizardry-grids.scss.
-
-
-Backtrace:
-Github/Jottly-Landing-Page/_sass/responsive.scss:2
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/selector/simple_sequence.rb:327:in `check_directives_match!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/selector/simple_sequence.rb:198:in `block (2 levels) in do_extend'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/selector/simple_sequence.rb:198:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/selector/simple_sequence.rb:198:in `block in do_extend'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/selector/simple_sequence.rb:188:in `map!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/selector/simple_sequence.rb:188:in `do_extend'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/selector/sequence.rb:112:in `block in do_extend'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/selector/sequence.rb:110:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/selector/sequence.rb:110:in `do_extend'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/selector/comma_sequence.rb:71:in `block in do_extend'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/selector/comma_sequence.rb:70:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/selector/comma_sequence.rb:70:in `do_extend'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/extend.rb:44:in `visit_rule'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/extend.rb:28:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/extend.rb:37:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:38:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/extend.rb:28:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/extend.rb:37:in `visit_children'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:38:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/extend.rb:28:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/visitors/extend.rb:15:in `visit'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:39:in `css_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.13/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+@charset "UTF-8";
+/*------------------------------------*\
+    $CSSWIZARDRY-GRIDS
+\*------------------------------------*/
+/**
+ * CONTENTS
+ * INTRODUCTION.........How the grid system works.
+ * VARIABLES............Your settings.
+ * MIXINS...............Library mixins.
+ * GRID SETUP...........Build the grid structure.
+ * WIDTHS...............Build our responsive widths around our breakpoints.
+ * PUSH.................Push classes.
+ * PULL.................Pull classes.
+ */
+/*------------------------------------*\
+    $INTRODUCTION
+\*------------------------------------*/
+/**
+ * csswizardry grids provides you with widths to suit a number of breakpoints
+ * designed around devices of a size you specify. Out of the box, csswizardry
+ * grids caters to the following types of device:
+ *
+ * palm     --  palm-based devices, like phones and small tablets
+ * lap      --  lap-based devices, like iPads or laptops
+ * portable --  all of the above
+ * desk     --  stationary devices, like desktop computers
+ * regular  --  any/all types of device
+ *
+ * These namespaces are then used in the library to give you the ability to
+ * manipulate your layouts based around them, for example:
+ *
+   <div class="grid__item  one-whole  lap--one-half  desk--one-third">
+ *
+ * This would give you a grid item which is 100% width unless it is on a lap
+ * device, at which point it become 50% wide, or it is on a desktop device, at
+ * which point it becomes 33.333% width.
+ *
+ * csswizardry grids also has push and pull classes which allow you to nudge
+ * grid items left and right by a defined amount. These follow the same naming
+ * convention as above, but are prepended by either `push--` or `pull--`, for
+ * example:
+ *
+   `class="grid__item  one-half  push--one-half"`
+ *
+ * This would give you a grid item which is 50% width and pushed over to the
+ * right by 50%.
+ *
+ * All classes in csswizardry grids follow this patten, so you should fairly
+ * quickly be able to piece together any combinations you can imagine, for
+ * example:
+ *
+   `class="grid__item  one-whole  lap--one-half  desk--one-third  push--desk--one-third"`
+ *
+   `class="grid__item  one-quarter  palm--one-half  push--palm--one-half"`
+ *
+   `class="grid__item  palm--one-third  desk--five-twelfths"`
+ */
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/**
+ * If you are building a non-responsive site but would still like to use
+ * csswizardry-grids, set this to ‘false’:
+ */
+/**
+ * Is this build mobile first? Setting to ‘true’ means that all grids will be
+ * 100% width if you do not apply a more specific class to them.
+ */
+/**
+ * Set the spacing between your grid items.
+ */
+/**
+ * Would you like Sass’ silent classes, or regular CSS classes?
+ */
+/**
+ * Would you like push and pull classes enabled?
+ */
+/**
+ * Define your breakpoints. The first value is the prefix that shall be used for
+ * your classes (e.g. `.palm--one-half`), the second value is the media query
+ * that the breakpoint fires at.
+ */
+/**
+ * Define which namespaced breakpoints you would like to generate for each of
+ * widths, push and pull. This is handy if you only need pull on, say, desk, or
+ * you only need a new width breakpoint at mobile sizes. It allows you to only
+ * compile as much CSS as you need. All are turned on by default, but you can
+ * add and remove breakpoints at will.
+ *
+ * Push and pull shall only be used if `$push` and/or `$pull` and `$responsive`
+ * have been set to ‘true’.
+ */
+/**
+ * You do not need to edit anything from this line onward; csswizardry-grids is
+ * good to go. Happy griddin’!
+ */
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+/**
+ * These mixins are for the library to use only, you should not need to modify
+ * them at all.
+ *
+ * Enclose a block of code with a media query as named in `$breakpoints`.
+ */
+/**
+ * Drop relative positioning into silent classes which can’t take advantage of
+ * the `[class*="push--"]` and `[class*="pull--"]` selectors.
+ */
+/**
+ * Clear all floats
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Sass::SyntaxError: You may not @extend an outer selector from within @media.\A You may only @extend selectors within the same directive.\A From \"@extend .small--three-quarters\" on line 394 of Github/Jottly-Landing-Page/_sass/_csswizardry-grids.scss.\A "; }
+/*------------------------------------*\
+    $GRID SETUP
+\*------------------------------------*/
+/**
+ * 1. Allow the grid system to be used on lists.
+ * 2. Remove any margins and paddings that might affect the grid system.
+ * 3. Apply a negative `margin-left` to negate the columns’ gutters.
+ */
+.grid {
+  list-style: none;
+  /* [1] */
+  margin: 0;
+  /* [2] */
+  padding: 0;
+  /* [2] */
+  margin-left: -20px;
+  /* [3] */ }
+  .grid:before, .grid:after {
+    content: "";
+    display: table; }
+  .grid:after {
+    clear: both; }
+
+/**
+ * 1. Cause columns to stack side-by-side.
+ * 2. Space columns apart.
+ * 3. Align columns to the tops of each other.
+ * 4. Full-width unless told to behave otherwise.
+ * 5. Required to combine fluid widths and fixed gutters.
+ */
+.grid__item {
+  float: left;
+  min-height: 1px;
+  padding-left: 20px;
+  /* [2] */
+  vertical-align: top;
+  /* [3] */
+  width: 100%;
+  /* [4] */ }
+
+/**
+ * Reversed grids allow you to structure your source in the opposite order to
+ * how your rendered layout will appear. Extends `.grid`.
+ */
+.grid--rev {
+  direction: rtl;
+  text-align: left; }
+  .grid--rev > .grid__item {
+    direction: ltr;
+    text-align: left; }
+
+/**
+ * Gutterless grids have all the properties of regular grids, minus any spacing.
+ * Extends `.grid`.
+ */
+.grid--full {
+  margin-left: 0; }
+  .grid--full > .grid__item {
+    padding-left: 0; }
+
+/**
+ * Align the entire grid to the right. Extends `.grid`.
+ */
+.grid--right {
+  text-align: right; }
+  .grid--right > .grid__item {
+    text-align: left; }
+
+/**
+ * Centered grids align grid items centrally without needing to use push or pull
+ * classes. Extends `.grid`.
+ */
+.grid--center {
+  text-align: center; }
+  .grid--center > .grid__item {
+    text-align: left; }
+
+/**
+ * Align grid cells vertically (`.grid--middle` or `.grid--bottom`). Extends
+ * `.grid`.
+ */
+.grid--middle > .grid__item {
+  vertical-align: middle; }
+
+.grid--bottom > .grid__item {
+  vertical-align: bottom; }
+
+/**
+ * Create grids with narrower gutters. Extends `.grid`.
+ */
+.grid--narrow {
+  margin-left: -10px; }
+  .grid--narrow > .grid__item {
+    padding-left: 10px; }
+
+/**
+ * Create grids with wider gutters. Extends `.grid`.
+ */
+.grid--wide {
+  margin-left: -40px; }
+  .grid--wide > .grid__item {
+    padding-left: 40px; }
+
+/*------------------------------------*\
+    $WIDTHS
+\*------------------------------------*/
+/**
+ * Create our width classes, prefixed by the specified namespace.
+ */
+/**
+ * Our regular, non-responsive width classes.
+ */
+/**
+ * Whole
+ */
+.one-whole {
+  width: 100%; }
+
+/**
+ * Halves
+ */
+.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths {
+  width: 50%; }
+
+/**
+ * Thirds
+ */
+.one-third, .two-sixths, .four-twelfths {
+  width: 33.333%; }
+
+.two-thirds, .four-sixths, .eight-twelfths {
+  width: 66.666%; }
+
+/**
+ * Quarters
+ */
+.one-quarter, .two-eighths, .three-twelfths {
+  width: 25%; }
+
+.three-quarters, .six-eighths, .nine-twelfths {
+  width: 75%; }
+
+/**
+ * Fifths
+ */
+.one-fifth, .two-tenths {
+  width: 20%; }
+
+.two-fifths, .four-tenths {
+  width: 40%; }
+
+.three-fifths, .six-tenths {
+  width: 60%; }
+
+.four-fifths, .eight-tenths {
+  width: 80%; }
+
+/**
+ * Sixths
+ */
+.one-sixth, .two-twelfths {
+  width: 16.666%; }
+
+.five-sixths, .ten-twelfths {
+  width: 83.333%; }
+
+/**
+ * Eighths
+ */
+.one-eighth {
+  width: 12.5%; }
+
+.three-eighths {
+  width: 37.5%; }
+
+.five-eighths {
+  width: 62.5%; }
+
+.seven-eighths {
+  width: 87.5%; }
+
+/**
+ * Tenths
+ */
+.one-tenth {
+  width: 10%; }
+
+.three-tenths {
+  width: 30%; }
+
+.seven-tenths {
+  width: 70%; }
+
+.nine-tenths {
+  width: 90%; }
+
+/**
+ * Twelfths
+ */
+.one-twelfth {
+  width: 8.333%; }
+
+.five-twelfths {
+  width: 41.666%; }
+
+.seven-twelfths {
+  width: 58.333%; }
+
+.eleven-twelfths {
+  width: 91.666%; }
+
+/**
+ * Our responsive classes, if we have enabled them.
+ */
+@media only screen and (min-width: 480px) {
+  /**
+   * Whole
+   */
+  .small--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+  .small--one-half, .small--two-quarters, .small--three-sixths, .small--four-eighths, .small--five-tenths, .small--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds
+   */
+  .small--one-third, .small--two-sixths, .small--four-twelfths {
+    width: 33.333%; }
+
+  .small--two-thirds, .small--four-sixths, .small--eight-twelfths {
+    width: 66.666%; }
+
+  /**
+   * Quarters
+   */
+  .small--one-quarter, .small--two-eighths, .small--three-twelfths {
+    width: 25%; }
+
+  .small--three-quarters, .small--six-eighths, .small--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths
+   */
+  .small--one-fifth, .small--two-tenths {
+    width: 20%; }
+
+  .small--two-fifths, .small--four-tenths {
+    width: 40%; }
+
+  .small--three-fifths, .small--six-tenths {
+    width: 60%; }
+
+  .small--four-fifths, .small--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths
+   */
+  .small--one-sixth, .small--two-twelfths {
+    width: 16.666%; }
+
+  .small--five-sixths, .small--ten-twelfths {
+    width: 83.333%; }
+
+  /**
+   * Eighths
+   */
+  .small--one-eighth {
+    width: 12.5%; }
+
+  .small--three-eighths {
+    width: 37.5%; }
+
+  .small--five-eighths {
+    width: 62.5%; }
+
+  .small--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Tenths
+   */
+  .small--one-tenth {
+    width: 10%; }
+
+  .small--three-tenths {
+    width: 30%; }
+
+  .small--seven-tenths {
+    width: 70%; }
+
+  .small--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths
+   */
+  .small--one-twelfth {
+    width: 8.333%; }
+
+  .small--five-twelfths {
+    width: 41.666%; }
+
+  .small--seven-twelfths {
+    width: 58.333%; }
+
+  .small--eleven-twelfths {
+    width: 91.666%; } }
+@media only screen and (min-width: 750px) {
+  /**
+   * Whole
+   */
+  .medium--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+  .medium--one-half, .medium--two-quarters, .medium--three-sixths, .medium--four-eighths, .medium--five-tenths, .medium--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds
+   */
+  .medium--one-third, .medium--two-sixths, .medium--four-twelfths {
+    width: 33.333%; }
+
+  .medium--two-thirds, .medium--four-sixths, .medium--eight-twelfths {
+    width: 66.666%; }
+
+  /**
+   * Quarters
+   */
+  .medium--one-quarter, .medium--two-eighths, .medium--three-twelfths {
+    width: 25%; }
+
+  .medium--three-quarters, .medium--six-eighths, .medium--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths
+   */
+  .medium--one-fifth, .medium--two-tenths {
+    width: 20%; }
+
+  .medium--two-fifths, .medium--four-tenths {
+    width: 40%; }
+
+  .medium--three-fifths, .medium--six-tenths {
+    width: 60%; }
+
+  .medium--four-fifths, .medium--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths
+   */
+  .medium--one-sixth, .medium--two-twelfths {
+    width: 16.666%; }
+
+  .medium--five-sixths, .medium--ten-twelfths {
+    width: 83.333%; }
+
+  /**
+   * Eighths
+   */
+  .medium--one-eighth {
+    width: 12.5%; }
+
+  .medium--three-eighths {
+    width: 37.5%; }
+
+  .medium--five-eighths {
+    width: 62.5%; }
+
+  .medium--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Tenths
+   */
+  .medium--one-tenth {
+    width: 10%; }
+
+  .medium--three-tenths {
+    width: 30%; }
+
+  .medium--seven-tenths {
+    width: 70%; }
+
+  .medium--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths
+   */
+  .medium--one-twelfth {
+    width: 8.333%; }
+
+  .medium--five-twelfths {
+    width: 41.666%; }
+
+  .medium--seven-twelfths {
+    width: 58.333%; }
+
+  .medium--eleven-twelfths {
+    width: 91.666%; } }
+@media only screen and (min-width: 999px) {
+  /**
+   * Whole
+   */
+  .large--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+  .large--one-half, .large--two-quarters, .large--three-sixths, .large--four-eighths, .large--five-tenths, .large--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds
+   */
+  .large--one-third, .large--two-sixths, .large--four-twelfths {
+    width: 33.333%; }
+
+  .large--two-thirds, .large--four-sixths, .large--eight-twelfths {
+    width: 66.666%; }
+
+  /**
+   * Quarters
+   */
+  .large--one-quarter, .large--two-eighths, .large--three-twelfths {
+    width: 25%; }
+
+  .large--three-quarters, .large--six-eighths, .large--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths
+   */
+  .large--one-fifth, .large--two-tenths {
+    width: 20%; }
+
+  .large--two-fifths, .large--four-tenths {
+    width: 40%; }
+
+  .large--three-fifths, .large--six-tenths {
+    width: 60%; }
+
+  .large--four-fifths, .large--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths
+   */
+  .large--one-sixth, .large--two-twelfths {
+    width: 16.666%; }
+
+  .large--five-sixths, .large--ten-twelfths {
+    width: 83.333%; }
+
+  /**
+   * Eighths
+   */
+  .large--one-eighth {
+    width: 12.5%; }
+
+  .large--three-eighths {
+    width: 37.5%; }
+
+  .large--five-eighths {
+    width: 62.5%; }
+
+  .large--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Tenths
+   */
+  .large--one-tenth {
+    width: 10%; }
+
+  .large--three-tenths {
+    width: 30%; }
+
+  .large--seven-tenths {
+    width: 70%; }
+
+  .large--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths
+   */
+  .large--one-twelfth {
+    width: 8.333%; }
+
+  .large--five-twelfths {
+    width: 41.666%; }
+
+  .large--seven-twelfths {
+    width: 58.333%; }
+
+  .large--eleven-twelfths {
+    width: 91.666%; } }
+@media only screen and (min-width: 1199px) {
+  /**
+   * Whole
+   */
+  .extralarge--one-whole {
+    width: 100%; }
+
+  /**
+   * Halves
+   */
+  .extralarge--one-half, .extralarge--two-quarters, .extralarge--three-sixths, .extralarge--four-eighths, .extralarge--five-tenths, .extralarge--six-twelfths {
+    width: 50%; }
+
+  /**
+   * Thirds
+   */
+  .extralarge--one-third, .extralarge--two-sixths, .extralarge--four-twelfths {
+    width: 33.333%; }
+
+  .extralarge--two-thirds, .extralarge--four-sixths, .extralarge--eight-twelfths {
+    width: 66.666%; }
+
+  /**
+   * Quarters
+   */
+  .extralarge--one-quarter, .extralarge--two-eighths, .extralarge--three-twelfths {
+    width: 25%; }
+
+  .extralarge--three-quarters, .extralarge--six-eighths, .extralarge--nine-twelfths {
+    width: 75%; }
+
+  /**
+   * Fifths
+   */
+  .extralarge--one-fifth, .extralarge--two-tenths {
+    width: 20%; }
+
+  .extralarge--two-fifths, .extralarge--four-tenths {
+    width: 40%; }
+
+  .extralarge--three-fifths, .extralarge--six-tenths {
+    width: 60%; }
+
+  .extralarge--four-fifths, .extralarge--eight-tenths {
+    width: 80%; }
+
+  /**
+   * Sixths
+   */
+  .extralarge--one-sixth, .extralarge--two-twelfths {
+    width: 16.666%; }
+
+  .extralarge--five-sixths, .extralarge--ten-twelfths {
+    width: 83.333%; }
+
+  /**
+   * Eighths
+   */
+  .extralarge--one-eighth {
+    width: 12.5%; }
+
+  .extralarge--three-eighths {
+    width: 37.5%; }
+
+  .extralarge--five-eighths {
+    width: 62.5%; }
+
+  .extralarge--seven-eighths {
+    width: 87.5%; }
+
+  /**
+   * Tenths
+   */
+  .extralarge--one-tenth {
+    width: 10%; }
+
+  .extralarge--three-tenths {
+    width: 30%; }
+
+  .extralarge--seven-tenths {
+    width: 70%; }
+
+  .extralarge--nine-tenths {
+    width: 90%; }
+
+  /**
+   * Twelfths
+   */
+  .extralarge--one-twelfth {
+    width: 8.333%; }
+
+  .extralarge--five-twelfths {
+    width: 41.666%; }
+
+  .extralarge--seven-twelfths {
+    width: 58.333%; }
+
+  .extralarge--eleven-twelfths {
+    width: 91.666%; } }
+/*------------------------------------*\
+    $PUSH
+\*------------------------------------*/
+/**
+ * Push classes, to move grid items over to the right by certain amounts.
+ */
+/*------------------------------------*\
+    $PULL
+\*------------------------------------*/
+/**
+ * Pull classes, to move grid items back to the left by certain amounts.
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #fff;
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  /*Base font size=18pt=24px !Edited to 18px*/
+  color: #784213;
+  /*light brown*/ }
+
+header {
+  background: #fff url(../images/heroimage.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 900px; }
+
+#top-header {
+  padding-top: 2em; }
+
+#main-headline {
+  margin: 0 auto 0 auto; }
+
+#main-headline h1 {
+  font-size: 1.5em;
+  /*Main headers=52pt=52px=2.8888em at large*/
+  color: #663f1c;
+  /*dark brown*/
+  font-weight: bold;
+  margin: 2em auto 0 auto;
+  text-align: center; }
+
+h2 {
+  /*subheadings in //FEATURES and question at top of //FOOTER*/
+  font-size: 1.2em;
+  color: #784213;
+  /*light brown*/ }
+
+#main-text, h3 {
+  /*subheader in //HEADER AKA class .main-text*/
+  font-size: 1em;
+  color: #784213;
+  /*light brown*/
+  margin: 1em 0 1em 0;
+  text-align: center; }
+
+#main-text p {
+  text-align: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto; }
+
+#logo img {
+  height: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+.outerbtn-div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
+
+#toplogin-btn {
+  border-width: 1px;
+  border-color: #784213;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: white;
+  width: 141px;
+  height: 55px;
+  margin: 2em auto 0 auto; }
+
+#toplogin-btn p {
+  text-align: center;
+  margin-top: .7em; }
+
+#input-top {
+  border-width: 1px;
+  border-color: #784213;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: white;
+  width: 300px;
+  height: 72px;
+  margin: 2em auto 0 auto; }
+
+#input-top p {
+  text-align: center;
+  margin-top: 1.2em; }
+
+#tryitbtn-top {
+  border-width: 1px;
+  border-color: #784213;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #0047b2;
+  width: 238px;
+  height: 70px;
+  margin: 1em auto 0 auto; }
+
+#tryitbtn-top p {
+  text-align: center;
+  margin-top: 1.2em;
+  color: #fff; }
+
+#message {
+  background-color: #fde1a2;
+  padding-top: 8em;
+  padding-bottom: 8em;
+  margin-left: auto;
+  margin-right: auto; }
+
+#atobparent {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4em; }
+
+#atobparent img {
+  height: auto;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+#message h1 {
+  text-align: center; }
+
+#socialproof {
+  background-color: #0047b2;
+  padding-top: 9em;
+  padding-bottom: 4em; }
+
+.headshot img {
+  height: 100%;
+  width: 100%; }
+
+.socialtext {
+  margin: 1.5em 1.5em 5em 1.5em;
+  text-align: center; }
+
+.socialtext p {
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.firstsocialp {
+  margin-bottom: 1em; }
+
+#features h1 {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  text-align: center; }
+
+.featuretext {
+  margin: 1.5em 1.5em 4em 1.5em;
+  text-align: center; }
+
+.featuretext h2 {
+  margin-bottom: 1em; }
+
+.featureparent img {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center; }
+
+#featurepic1 {
+  width: 90%; }
+
+#featurepic2 {
+  width: 40%; }
+
+#featurepic3 {
+  width: 40%; }
+
+footer {
+  background-color: #0047b2;
+  color: #fff;
+  text-align: center; }
+
+footer h2 {
+  margin-top: 4em;
+  color: #fff;
+  text-align: center; }
+
+#input-btm {
+  border-width: 1px;
+  border-color: #784213;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: white;
+  width: 300px;
+  height: 72px;
+  margin: 2em auto 0 auto; }
+
+#input-btm p {
+  text-align: center;
+  margin-top: 1.2em;
+  color: #784213; }
+
+#tryitbtn-btm {
+  border-width: 1px;
+  border-color: #784213;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #ffff99;
+  width: 238px;
+  height: 70px;
+  margin: 1em auto 0 auto; }
+
+#tryitbtn-btm p {
+  text-align: center;
+  margin-top: 1.2em;
+  color: #784213; }
+
+#copyright {
+  margin-top: 2em;
+  margin-bottom: 4em; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: " ";
+  clear: both;
+  height: 0;
+  font-size: 0; }
+
+/*Copied CSS from PSD below*/
+
+/*# sourceMappingURL=style.css.map */
