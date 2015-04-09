@@ -899,11 +899,19 @@ h2 {
 
 .featureparent img {
   height: auto;
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
   display: block;
   text-align: center; }
+
+#featurepic1 {
+  width: 90%; }
+
+#featurepic2 {
+  width: 40%; }
+
+#featurepic3 {
+  width: 40%; }
 
 footer {
   background-color: #0047b2;
@@ -944,6 +952,10 @@ footer h2 {
   text-align: center;
   margin-top: 1.2em;
   color: #784213; }
+
+#copyright {
+  margin-top: 2em;
+  margin-bottom: 4em; }
 
 .clearfix:after {
   visibility: hidden;

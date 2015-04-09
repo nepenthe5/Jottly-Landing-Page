@@ -159,11 +159,20 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
 }
 .featureparent img {
   height: auto;
-  width: 90%;
+  //width: 90%;
   margin-left: auto;
   margin-right: auto;
   display: block;
   text-align: center; //For alt
+}
+#featurepic1 {
+  width: 90%;
+}
+#featurepic2 {
+  width: 40%;
+}
+#featurepic3 {
+  width: 40%
 }
 // Footer
 footer {
