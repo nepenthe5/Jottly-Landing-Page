@@ -1,4 +1,5 @@
 @import  "csswizardry-grids";
+@import  "responsive";
 * {margin:0;padding:0;box-sizing:border-box;}
 body {
     background: #fff;
@@ -151,7 +152,7 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   text-align: center;
 }
 .featuretext {
-  margin: 1.5em 1.5em 5em 1.5em;
+  margin: 1.5em 1.5em 4em 1.5em;
   text-align: center;
 }
 .featuretext h2 {
