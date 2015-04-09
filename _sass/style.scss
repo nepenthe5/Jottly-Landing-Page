@@ -1,5 +1,10 @@
 @import  "csswizardry-grids";
-@import  "responsive";
+
+$small: 480px;
+$medium: 750px;
+
+// @import  "responsive";
+
 * {margin:0;padding:0;box-sizing:border-box;}
 body {
     background: #fff;
@@ -221,7 +226,7 @@ footer h2 {
   margin-top: 2em;
   margin-bottom: 4em;
 }
-// .wrapper {   <---Add in later in MQ
+// .wrapper {   <---Add in later in MQ?
 //   margin: 0 auto 0 auto;
 //   width: 940px; 
 //   position: relative;
@@ -234,7 +239,8 @@ footer h2 {
   height: 0;
   font-size: 0;
 }
-/*Copied CSS from PSD below*/
-
+// *************
+// Media Queries
+// *************
 
 
