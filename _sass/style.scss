@@ -3,8 +3,6 @@
 $small: 480px;
 $medium: 750px;
 
-// @import  "responsive";
-
 * {margin:0;padding:0;box-sizing:border-box;}
 body {
     background: #fff;
@@ -58,7 +56,7 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
 .outerbtn-div {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  // width: 100%;
 }
 #toplogin-btn {
   border-width: 1px;
@@ -242,5 +240,14 @@ footer h2 {
 // *************
 // Media Queries
 // *************
-
+@media only screen and (min-width: $small) {
+  #toplogin-btn {
+    float: right;
+    margin: 0 2em 0 auto;
+  }
+  #logo img {  // Puts logo all the way to the left of div
+    margin-left: 2em;
+    margin-right: 0;
+  }
+}
 
