@@ -97,7 +97,7 @@ $use-silent-classes:    false !default;
  * Would you like push and pull classes enabled?
  */
 $push:                  true !default;
-$pull:                  false !default;
+$pull:                  true !default;
 
 /**
  * Define your breakpoints. The first value is the prefix that shall be used for
@@ -457,6 +457,11 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
  */
 @mixin push-setup($namespace: "") {
     $prefix: $class-type + "push--" + $namespace;
+    
+    /**
+    * None
+    */
+    #{$prefix}none                { left:0%; @include silent-relative; }
 
     /**
      * Whole
@@ -577,6 +582,11 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
  */
 @mixin pull-setup($namespace: "") {
     $prefix: $class-type + "pull--" + $namespace;
+    
+    /**
+     * None
+     */
+    #{$prefix}none                { right:0%; @include silent-relative; }
 
     /**
      * Whole
