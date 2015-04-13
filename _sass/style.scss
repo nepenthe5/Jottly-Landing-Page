@@ -265,4 +265,18 @@ footer h2 {
     margin: 0 1.5em 4em 1.5em;
   }
 }
+@media only screen and (min-width: $medium) {
+  #featurepic3 { // Makes comment bubble icon equal in size and position to other icons
+    width: 57%;
+  }
+  #socialbox1 {
+    margin: 0 1em 0 1em;
+  }
+  #socialbox2 {
+    margin: 0;
+  }
+  #socialbox3 {
+    margin: 0 1em 0 1em;
+  }
+}
 
