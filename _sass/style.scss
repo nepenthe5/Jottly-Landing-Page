@@ -13,7 +13,7 @@ body {
 }
 // HEADER
 header {
-  background: #fff url(../images/heroimage.jpg) no-repeat center center;
+  background: #fff url(../images/heroimage3.jpg) no-repeat center center;
   background-size: cover;
   min-height: 900px; //900px at max in Media Query, smaller at mobile?
   //padding: 1em 0 5em 0;
@@ -301,9 +301,6 @@ footer h2 {
   #tryitbtn-top {
     margin: 2em 0 0 0;
   }
-  #inputtopclear {
-    clear: left;
-  }
   // MESSAGE
   #message h1 {
     font-size: 2.2em;
@@ -327,6 +324,21 @@ footer h2 {
   #metafeaturep {
     margin: 0 auto 0 auto;
   }
-
+  // FEATURES
+  #features h1 {
+    font-size: 2.2em;
+  }
+  // FOOTER
+  footer h2 {
+    font-size: 1.7em;
+  }
+  #inputbtmwidth {
+    width: 53%;
+  }
+  #input-btm {
+    float: right;
+  }
+  #tryitbtn-btm {
+    margin: 2em 0 0 0;
+  }
 }
-
