@@ -27,13 +27,14 @@
 
     <header>
     <!-- // HEADER -->
+    <div class="wrapper">
     <!-- top header here (logo and login) -->
       <div id="top-header" class="clearfix">
         <div class="grid">
-          <div class="grid__item small--one-half" id="logo">
+          <div class="grid__item small--one-half medium--one-sixth" id="logo">
             <a href="index.html"><img viewBox="0 0 140 55" src="images/JottlyBlueLogo.svg"></a>
           </div>
-          <div class="outerbtn-div grid__item small--one-half">
+          <div class="outerbtn-div grid__item small--one-half medium--five-sixths">
             <div id="toplogin-btn">
               <p>Login</p>
             </div>
@@ -42,23 +43,24 @@
       </div>
          <!-- Top header ends here -->
         <div class="grid">
-          <div class="grid__item three-fourths large--seven-twelfths" id="main-headline">
+          <div class="grid__item three-fourths medium--seven-twelfths" id="main-headline">
             <h1>Collaborate in real time<br>Let your voice be heard</h1>
           </div>
-          <div class="grid__item" id="main-text">
+          <div class="grid__item medium--seven-twelfths" id="main-text">
             <p>Edit, post and share ideas with your peers--the simple way</p>
           </div>
-          <div class="outerbtn-div grid__item"> <!-- Input here -->
+          <div id="inputtopclear" class="outerbtn-div grid__item medium--five-twelfths"> <!-- Input here -->
             <div id="input-top">
               <p>johndoe@email.com</p>
             </div>
           </div>
-          <div class="outerbtn-div grid__item"> <!-- Call to Action btn here -->
+          <div class="outerbtn-div grid__item medium--four-twelfths"> <!-- Call to Action btn here -->
             <div id="tryitbtn-top">
               <p>Try it for free!</p>
             </div>
           </div>
         </div>
+        </div> <!-- End Wrapper here -->
     </header>
     <!-- // MESSAGE -->
     <section id="message">
@@ -118,7 +120,7 @@
           <div class="grid__item">
             <h1>Bring it all together</h1>
           </div>
-          <div class="featureparent marginfix grid__item small--two-thirds push--small--one-sixth push--medium--none medium--three-tenths"> <!-- Image -->
+          <div class="featureparent marginfix grid__item small--two-thirds push--small--one-sixth push--medium--none medium--one-third"> <!-- Image -->
             <img id="featurepic1" viewBox="0 0 100 100" src="images/teamicon.svg" 
             alt="Team Icon">
             <div class="featuretext">
@@ -127,7 +129,7 @@
               feedback you need</p>
             </div>
           </div>
-          <div class="featureparent grid__item small--two-thirds push--small--one-sixth push--medium--none medium--three-tenths"> <!-- Image -->
+          <div class="featureparent grid__item small--two-thirds push--small--one-sixth push--medium--none medium--one-third"> <!-- Image -->
             <img id="featurepic2" viewBox="0 0 100 100" src="images/micicon.svg" 
             alt="Mic Icon">
             <div class="featuretext">
@@ -137,7 +139,7 @@
               </p>
             </div>
           </div>
-          <div class="featureparent grid__item small--two-thirds push--small--one-sixth push--medium--none medium--three-tenths"> <!-- Image -->
+          <div class="featureparent grid__item small--two-thirds push--small--one-sixth push--medium--none medium--one-third"> <!-- Image -->
             <img id="featurepic3" viewBox="0 0 100 100" src="images/commenticon.svg" 
             alt="Comment Bubble Icon">
             <div class="featuretext">
@@ -153,7 +155,8 @@
       </div>
     </section>
     <!-- // FOOTER -->
-    <footer class="wrapper">
+    <footer>
+    <div class="wrapper">
       <div class="grid">
         <div class="grid__item">
           <h2>Ready to get started with Jottly?</h2>
@@ -171,6 +174,7 @@
         <div id="copyright" class="grid__item">
           <p>&copy; 2015 Copyright Jottly. All rights reserved.</p>
         </div>
+      </div>
       </div>
     </footer>
   </body>

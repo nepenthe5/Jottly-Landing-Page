@@ -2047,6 +2047,44 @@ footer h2 {
     width: 90%;
     margin: 0 1.5em 4em 1.5em; } }
 @media only screen and (min-width: 750px) {
+  .wrapper {
+    margin: 0 auto 0 auto;
+    max-width: 960px;
+    position: relative; }
+
+  #logo img {
+    margin-left: 0;
+    width: 100%; }
+
+  #toplogin-btn {
+    margin: 0 0 0 auto; }
+
+  #main-headline h1 {
+    font-size: 2.2em;
+    text-align: left; }
+
+  #main-text, h3 {
+    text-align: left;
+    font-size: 1.2em; }
+
+  #main-text p {
+    text-align: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+
+  #input-top {
+    margin: 2em 0 0 0; }
+
+  #tryitbtn-top {
+    margin: 2em 0 0 0; }
+
+  #inputtopclear {
+    clear: left; }
+
+  #message h1 {
+    font-size: 2.2em; }
+
   #socialbox1 {
     margin: 0 1em 0 1em; }
 
@@ -2060,6 +2098,9 @@ footer h2 {
     margin-left: 20px; }
 
   .featureparent {
-    text-align: center; } }
+    text-align: center; }
+
+  #metafeaturep {
+    margin: 0 auto 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */
