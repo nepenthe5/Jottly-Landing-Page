@@ -1974,6 +1974,9 @@ h2 {
 #featurepic3 {
   width: 40%; }
 
+#macbook {
+  display: none; }
+
 footer {
   background-color: #0047b2;
   color: #fff;
@@ -2033,6 +2036,15 @@ footer h2 {
 
   #logo img {
     margin-left: 2em;
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  #macbook {
+    display: block;
+    text-align: center; }
+
+  #macbook img {
+    height: auto;
+    width: 90%;
+    margin: 0 1.5em 4em 1.5em; } }
 
 /*# sourceMappingURL=style.css.map */
