@@ -1972,7 +1972,7 @@ h2 {
   width: 40%; }
 
 #featurepic3 {
-  width: 40%; }
+  width: 57%; }
 
 #macbook {
   display: none; }
@@ -2047,9 +2047,6 @@ footer h2 {
     width: 90%;
     margin: 0 1.5em 4em 1.5em; } }
 @media only screen and (min-width: 750px) {
-  #featurepic3 {
-    width: 57%; }
-
   #socialbox1 {
     margin: 0 1em 0 1em; }
 
@@ -2057,6 +2054,12 @@ footer h2 {
     margin: 0; }
 
   #socialbox3 {
-    margin: 0 1em 0 1em; } }
+    margin: 0 1em 0 1em; }
+
+  .marginfix {
+    margin-left: 20px; }
+
+  .featureparent {
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

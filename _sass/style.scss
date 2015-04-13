@@ -2,6 +2,7 @@
 
 $small: 480px;
 $medium: 750px;
+$gutter: 20px;
 
 * {margin:0;padding:0;box-sizing:border-box;}
 body {
@@ -176,7 +177,7 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   width: 40%;
 }
 #featurepic3 {
-  width: 40%
+  width: 57%
 }
 #macbook {
   display: none;
@@ -266,9 +267,6 @@ footer h2 {
   }
 }
 @media only screen and (min-width: $medium) {
-  #featurepic3 { // Makes comment bubble icon equal in size and position to other icons
-    width: 57%;
-  }
   #socialbox1 {
     margin: 0 1em 0 1em;
   }
@@ -277,6 +275,12 @@ footer h2 {
   }
   #socialbox3 {
     margin: 0 1em 0 1em;
+  }
+  .marginfix {  //Fixes margin problem caused from resetting grid positioning (adds 20px on left) to correct centering
+    margin-left: $gutter;
+  }
+  .featureparent {
+    text-align: center;
   }
 }
 
