@@ -2082,14 +2082,9 @@ footer h2 {
   #message h1 {
     font-size: 2.2em; }
 
-  #socialbox1 {
-    margin: 0 1em 0 1em; }
-
-  #socialbox2 {
-    margin: 0; }
-
-  #socialbox3 {
-    margin: 0 1em 0 1em; }
+  .socialbox {
+    width: 85%;
+    margin: 0 auto 0 auto; }
 
   .marginfix {
     margin-left: 20px; }

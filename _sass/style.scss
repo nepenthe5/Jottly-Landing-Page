@@ -306,14 +306,9 @@ footer h2 {
     font-size: 2.2em;
   }
   // SOCIAL PROOF
-  #socialbox1 {
-    margin: 0 1em 0 1em;
-  }
-  #socialbox2 {
-    margin: 0;
-  }
-  #socialbox3 {
-    margin: 0 1em 0 1em;
+  .socialbox {
+    width: 85%;
+    margin: 0 auto 0 auto;
   }
   .marginfix {  //Fixes margin problem caused from resetting grid positioning (adds 20px on left) to correct centering
     margin-left: $gutter;
