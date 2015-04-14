@@ -306,20 +306,17 @@ footer h2 {
     font-size: 2.2em;
   }
   // SOCIAL PROOF
-  .socialbox {
-    width: 85%;
-    margin: 0 auto 0 auto;
-  }
-  .marginfix {  //Fixes margin problem caused from resetting grid positioning (adds 20px on left) to correct centering
-    margin-left: $gutter;
-  }
+  //.socialbox {
+  //  width: 85%;
+  //  margin: 0 auto 0 auto;
+  //}
+  // FEATURES
   .featureparent {
     text-align: center;
   }
   #metafeaturep {
     margin: 0 auto 0 auto;
   }
-  // FEATURES
   #features h1 {
     font-size: 2.2em;
   }
