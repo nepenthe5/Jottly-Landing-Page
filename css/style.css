@@ -1868,22 +1868,18 @@ button {
   color: #784213;
   /*light brown*/ }
 
-button a {
-  margin-left: -10px; }
-
-#input-top {
+input {
+  padding: .5em;
   border-width: 1px;
   border-color: #784213;
   border-style: solid;
   border-radius: 10px;
   background-color: white;
-  width: 300px;
-  height: 72px;
-  margin: 2em auto 0 auto; }
-
-#input-top p {
-  text-align: center;
-  margin-top: 1.2em; }
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  /*Base font size=18pt=24px !Edited to 18px*/
+  color: #784213;
+  /*light brown*/ }
 
 #tryitbtn-top {
   border-width: 1px;

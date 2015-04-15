@@ -56,7 +56,6 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   display: block;
 }
 button {
-  //text-align: center;
   padding: .5em;
   border-width: 1px;
   border-color: rgb(120, 66, 19);
@@ -67,9 +66,20 @@ button {
   font-size: 18px; /*Base font size=18pt=24px !Edited to 18px*/
   color: #784213; /*light brown*/
 }
-button a {
-  margin-left: -10px; // Fixes left margin in button, centers text
+input {
+  padding: .5em;
+  border-width: 1px;
+  border-color: rgb(120, 66, 19);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px; /*Base font size=18pt=24px !Edited to 18px*/
+  color: #784213; /*light brown*/
 }
+//button a {
+ // margin-left: -10px; // Fixes left margin in button, centers text
+//}
 // .outerbtn-div {
 //   margin-left: auto;
 //   margin-right: auto;
@@ -84,20 +94,20 @@ button a {
 //   text-align: center;
 //   margin-top: .7em;
 // }
-#input-top {
-  border-width: 1px;
-  border-color: rgb(120, 66, 19);
-  border-style: solid;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255);
-  width: 300px;
-  height: 72px;
-  margin: 2em auto 0 auto;
-}
-#input-top p {
-  text-align: center;
-  margin-top: 1.2em;
-}
+// #input-top {
+//   border-width: 1px;
+//   border-color: rgb(120, 66, 19);
+//   border-style: solid;
+//   border-radius: 10px;
+//   background-color: rgb(255, 255, 255);
+//   width: 300px;
+//   height: 72px;
+//   margin: 2em auto 0 auto;
+// }
+// #input-top p {
+//   text-align: center;
+//   margin-top: 1.2em;
+// }
 #tryitbtn-top {
   border-width: 1px;
   border-color: rgb(120, 66, 19);
