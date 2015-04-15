@@ -15,7 +15,8 @@ body {
 header {
   background: #fff url(../images/heroimage3.jpg) no-repeat center center;
   background-size: cover;
-  min-height: 900px; //900px at max in Media Query, smaller at mobile?
+  background-position: -15px 0;
+  //min-height: 900px; //900px at max in Media Query, smaller at mobile?
   //padding: 1em 0 5em 0;
 }
 #top-header {
@@ -28,7 +29,7 @@ header {
   font-size: 1.5em;/*Main headers=52pt=52px=2.8888em at large*/
   color: #663f1c;/*dark brown*/
   font-weight: bold;
-  margin: 2em auto 0 auto;
+  margin: 1em auto 0 auto;
   text-align: center;
 }
 h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
@@ -81,9 +82,11 @@ input {
   background-color: #0047b2;
   color: #fff;
   margin-top: 1em;
+  margin-bottom: 2em;
 }
 #yellowbutton {
   background-color: #ffff99;
+  margin-top: 1em;
 }
 //button a {
  // margin-left: -10px; // Fixes left margin in button, centers text
@@ -116,33 +119,33 @@ input {
 //   text-align: center;
 //   margin-top: 1.2em;
 // }
-#tryitbtn-top {
-  border-width: 1px;
-  border-color: rgb(120, 66, 19);
-  border-style: solid;
-  border-radius: 10px;
-  background-color: rgb(0, 71, 178);
-  width: 238px;
-  height: 70px;
-  margin: 1em auto 0 auto;
-}
-#tryitbtn-top p {
-  text-align: center;
-  margin-top: 1.2em;
-  color: #fff;
-}
+// #tryitbtn-top {
+//   border-width: 1px;
+//   border-color: rgb(120, 66, 19);
+//   border-style: solid;
+//   border-radius: 10px;
+//   background-color: rgb(0, 71, 178);
+//   width: 238px;
+//   height: 70px;
+//   margin: 1em auto 0 auto;
+// }
+// #tryitbtn-top p {
+//   text-align: center;
+//   margin-top: 1.2em;
+//   color: #fff;
+// }
 // Message Section
 #message {
   background-color: #fde1a2;
-  padding-top: 8em;
-  padding-bottom: 8em;
+  padding-top: 4em;
+  padding-bottom: 4em;
   margin-left: auto;
   margin-right: auto;
 }
 #atobparent {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 #atobparent img {
   height: auto;
@@ -157,15 +160,14 @@ input {
 // Social Proof Section
 #socialproof {
   background-color: #0047b2;
-  padding-top: 9em;
-  padding-bottom: 4em;
+  padding-top: 2em;
 }
 .headshot img{
   height: 100%;
   width: 100%;
 }
 .socialtext {
-  margin: 1.5em 1.5em 5em 1.5em;
+  margin: 1.5em 1.5em 2em 1.5em;
   text-align: center;
 }
 .socialtext p{
@@ -180,12 +182,12 @@ input {
 }
 // Features
 #features h1 {
-  margin-top: 4em;
-  margin-bottom: 4em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   text-align: center;
 }
 .featuretext {
-  margin: 1.5em 1.5em 4em 1.5em;
+  margin: 1.5em 1.5em 2em 1.5em;
   text-align: center;
 }
 .featuretext h2 {
@@ -200,13 +202,13 @@ input {
   text-align: center; //For alt
 }
 #featurepic1 {
-  width: 90%;
+  width: 45%;
 }
 #featurepic2 {
-  width: 40%;
+  width: 20%;
 }
 #featurepic3 {
-  width: 57%
+  width: 28.5%
 }
 #macbook {
   display: none;
@@ -218,50 +220,45 @@ footer {
   text-align: center;
 }
 footer h2 {
-  margin-top: 4em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   color: #fff;
   text-align: center;
 }
-//----Input and Button
-#input-btm {
-  border-width: 1px;
-  border-color: rgb(120, 66, 19);
-  border-style: solid;
-  border-radius: 10px;
-  background-color: rgb(255, 255, 255);
-  width: 300px;
-  height: 72px;
-  margin: 2em auto 0 auto;
-}
-#input-btm p {
-  text-align: center;
-  margin-top: 1.2em;
-  color: #784213;
-}
-#tryitbtn-btm {
-  border-width: 1px;
-  border-color: rgb(120, 66, 19);
-  border-style: solid;
-  border-radius: 10px;
-  background-color: #ffff99;
-  width: 238px;
-  height: 70px;
-  margin: 1em auto 0 auto;
-}
-#tryitbtn-btm p {
-  text-align: center;
-  margin-top: 1.2em;
-  color: #784213;
-}
+// #input-btm {
+//   border-width: 1px;
+//   border-color: rgb(120, 66, 19);
+//   border-style: solid;
+//   border-radius: 10px;
+//   background-color: rgb(255, 255, 255);
+//   width: 300px;
+//   height: 72px;
+//   margin: 0 auto 0 auto;
+// }
+// #input-btm p {
+//   text-align: center;
+//   margin-top: 1.2em;
+//   color: #784213;
+// }
+// #tryitbtn-btm {
+//   border-width: 1px;
+//   border-color: rgb(120, 66, 19);
+//   border-style: solid;
+//   border-radius: 10px;
+//   background-color: #ffff99;
+//   width: 238px;
+//   height: 70px;
+//   margin: 1em auto 0 auto;
+// }
+// #tryitbtn-btm p {
+//   text-align: center;
+//   margin-top: 1.2em;
+//   color: #784213;
+// }
 #copyright {
   margin-top: 2em;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
-// .wrapper {   <---Add in later in MQ?
-//   margin: 0 auto 0 auto;
-//   width: 940px; 
-//   position: relative;
-// }
 .clearfix:after{
   visibility: hidden;
   display: block;
@@ -270,9 +267,11 @@ footer h2 {
   height: 0;
   font-size: 0;
 }
-// *************
-// Media Queries
-// *************
+// ***************************** //
+// ***************************** //
+// ********Media Queries******** //
+// ***************************** //
+// ***************************** //
 @media only screen and (min-width: $small) {
   #toplogin-btn {
     float: right;
