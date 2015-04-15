@@ -1852,25 +1852,24 @@ h2 {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 2em;
   display: block; }
 
-.outerbtn-div {
-  margin-left: auto;
-  margin-right: auto; }
-
-#toplogin-btn {
+button {
+  padding: .5em;
   border-width: 1px;
   border-color: #784213;
   border-style: solid;
   border-radius: 10px;
   background-color: white;
-  width: 141px;
-  height: 55px;
-  margin: 2em auto 0 auto; }
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  /*Base font size=18pt=24px !Edited to 18px*/
+  color: #784213;
+  /*light brown*/ }
 
-#toplogin-btn p {
-  text-align: center;
-  margin-top: .7em; }
+button a {
+  margin-left: -10px; }
 
 #input-top {
   border-width: 1px;
