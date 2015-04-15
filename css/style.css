@@ -1881,6 +1881,14 @@ input {
   color: #784213;
   /*light brown*/ }
 
+#bluebutton {
+  background-color: #0047b2;
+  color: #fff;
+  margin-top: 1em; }
+
+#yellowbutton {
+  background-color: #ffff99; }
+
 #tryitbtn-top {
   border-width: 1px;
   border-color: #784213;
