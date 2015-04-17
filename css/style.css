@@ -1279,10 +1279,10 @@ body {
 header {
   background: #fff url(../images/heroimage3.jpg) no-repeat center center;
   background-size: cover;
-  background-position: -130px 0; }
+  background-position: -30px 0; }
 
 #top-header {
-  padding-top: 2em; }
+  padding-top: 1em; }
 
 #main-headline {
   margin: 0 auto 0 auto; }
@@ -1321,7 +1321,7 @@ h2 {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   display: block; }
 
 .button {
@@ -1367,7 +1367,7 @@ input {
   background-color: #0047b2;
   color: #fff;
   margin-top: 1em;
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
 
 #yellowbutton {
   background-color: #ffff99;
@@ -1419,12 +1419,12 @@ input {
   margin-bottom: 1em; }
 
 #features h1 {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   text-align: center; }
 
 .featuretext {
-  margin: 1.5em 1.5em 2em 1.5em;
+  margin: 1em 1.5em 1em 1.5em;
   text-align: center; }
 
 .featuretext h2 {
@@ -1455,14 +1455,14 @@ footer {
   text-align: center; }
 
 footer h2 {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   color: #fff;
   text-align: center; }
 
 #copyright {
-  margin-top: 2em;
-  margin-bottom: 2em; }
+  margin-top: 1em;
+  margin-bottom: 1em; }
 
 .wrapper {
   margin-left: 2em;

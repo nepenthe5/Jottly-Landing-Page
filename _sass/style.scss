@@ -15,12 +15,12 @@ body {
 header {
   background: #fff url(../images/heroimage3.jpg) no-repeat center center;
   background-size: cover;
-  background-position: -130px 0;
+  background-position: -30px 0;
   //min-height: 900px; //900px at max in Media Query, smaller at mobile?
   //padding: 1em 0 5em 0;
 }
 #top-header {
-    padding-top: 2em;
+    padding-top: 1em;
 }
 #main-headline {
   margin: 0 auto 0 auto;
@@ -53,7 +53,7 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   display: block;
 }
 .button {
@@ -93,58 +93,12 @@ input {
   background-color: #0047b2;
   color: #fff;
   margin-top: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 #yellowbutton {
   background-color: #ffff99;
   margin-top: 1em;
 }
-//button a {
- // margin-left: -10px; // Fixes left margin in button, centers text
-//}
-// .outerbtn-div {
-//   margin-left: auto;
-//   margin-right: auto;
-//   // width: 100%;
-// }
-//#toplogin-btn {
-  //width: 141px;
-  //height: 55px;
- // margin: 2em auto 0 auto;
-//}
-// #toplogin-btn p {
-//   text-align: center;
-//   margin-top: .7em;
-// }
-// #input-top {
-//   border-width: 1px;
-//   border-color: rgb(120, 66, 19);
-//   border-style: solid;
-//   border-radius: 10px;
-//   background-color: rgb(255, 255, 255);
-//   width: 300px;
-//   height: 72px;
-//   margin: 2em auto 0 auto;
-// }
-// #input-top p {
-//   text-align: center;
-//   margin-top: 1.2em;
-// }
-// #tryitbtn-top {
-//   border-width: 1px;
-//   border-color: rgb(120, 66, 19);
-//   border-style: solid;
-//   border-radius: 10px;
-//   background-color: rgb(0, 71, 178);
-//   width: 238px;
-//   height: 70px;
-//   margin: 1em auto 0 auto;
-// }
-// #tryitbtn-top p {
-//   text-align: center;
-//   margin-top: 1.2em;
-//   color: #fff;
-// }
 // Message Section
 #message {
   background-color: #fde1a2;
@@ -194,12 +148,12 @@ input {
 }
 // Features
 #features h1 {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   text-align: center;
 }
 .featuretext {
-  margin: 1.5em 1.5em 2em 1.5em;
+  margin: 1em 1.5em 1em 1.5em;
   text-align: center;
 }
 .featuretext h2 {
@@ -232,44 +186,14 @@ footer {
   text-align: center;
 }
 footer h2 {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   color: #fff;
   text-align: center;
 }
-// #input-btm {
-//   border-width: 1px;
-//   border-color: rgb(120, 66, 19);
-//   border-style: solid;
-//   border-radius: 10px;
-//   background-color: rgb(255, 255, 255);
-//   width: 300px;
-//   height: 72px;
-//   margin: 0 auto 0 auto;
-// }
-// #input-btm p {
-//   text-align: center;
-//   margin-top: 1.2em;
-//   color: #784213;
-// }
-// #tryitbtn-btm {
-//   border-width: 1px;
-//   border-color: rgb(120, 66, 19);
-//   border-style: solid;
-//   border-radius: 10px;
-//   background-color: #ffff99;
-//   width: 238px;
-//   height: 70px;
-//   margin: 1em auto 0 auto;
-// }
-// #tryitbtn-btm p {
-//   text-align: center;
-//   margin-top: 1.2em;
-//   color: #784213;
-// }
 #copyright {
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .wrapper {
   margin-left: 2em;
