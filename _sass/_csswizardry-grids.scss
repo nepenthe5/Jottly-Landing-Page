@@ -97,7 +97,7 @@ $use-silent-classes:    false !default;
  * Would you like push and pull classes enabled?
  */
 $push:                  true !default;
-$pull:                  true !default;
+$pull:                  false !default;
 
 /**
  * Define your breakpoints. The first value is the prefix that shall be used for
@@ -255,7 +255,6 @@ $class-type: if($use-silent-classes, unquote("%"), unquote("."));
         padding-left:0;
     }
 }
-
 
 /**
  * Align the entire grid to the right. Extends `.grid`.

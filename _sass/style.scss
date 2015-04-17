@@ -56,7 +56,7 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   margin-bottom: 2em;
   display: block;
 }
-button {
+.button {
   padding: .5em;
   border-width: 1px;
   border-color: rgb(120, 66, 19);
@@ -66,6 +66,16 @@ button {
   font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px; /*Base font size=18pt=24px !Edited to 18px*/
   color: #784213; /*light brown*/
+  text-align: center;
+}
+#login {
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px; /*Base font size=18pt=24px !Edited to 18px*/
+  color: #784213; /*light brown*/
+  text-align: center;
+}
+a {
+  text-decoration: none;
 }
 input {
   padding: .5em;
@@ -77,6 +87,7 @@ input {
   font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px; /*Base font size=18pt=24px !Edited to 18px*/
   color: #784213; /*light brown*/
+  width: 100%
 }
 #bluebutton {
   background-color: #0047b2;
@@ -137,15 +148,15 @@ input {
 // Message Section
 #message {
   background-color: #fde1a2;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   margin-left: auto;
   margin-right: auto;
 }
 #atobparent {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 #atobparent img {
   height: auto;
@@ -160,14 +171,15 @@ input {
 // Social Proof Section
 #socialproof {
   background-color: #0047b2;
-  padding-top: 2em;
+  padding-top: 1em;
 }
 .headshot img{
-  height: 100%;
-  width: 100%;
+  width: 50%;
+  display: block;
+  margin: 0 auto;
 }
 .socialtext {
-  margin: 1.5em 1.5em 2em 1.5em;
+  margin: 1em 1.5em 1em 1.5em;
   text-align: center;
 }
 .socialtext p{

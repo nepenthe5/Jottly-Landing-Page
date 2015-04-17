@@ -1263,537 +1263,6 @@
 /**
  * Pull classes, to move grid items back to the left by certain amounts.
  */
-/**
- * Not a particularly great selector, but the DRYest way to do things.
- */
-[class*="pull--"] {
-  position: relative; }
-
-/**
- * None
- */
-.pull--none {
-  right: 0%; }
-
-/**
- * Whole
- */
-.pull--one-whole {
-  right: 100%; }
-
-/**
- * Halves
- */
-.pull--one-half, .pull--two-quarters, .pull--three-sixths, .pull--four-eighths, .pull--five-tenths, .pull--six-twelfths {
-  right: 50%; }
-
-/**
- * Thirds
- */
-.pull--one-third, .pull--two-sixths, .pull--four-twelfths {
-  right: 33.333%; }
-
-.pull--two-thirds, .pull--four-sixths, .pull--eight-twelfths {
-  right: 66.666%; }
-
-/**
- * Quarters
- */
-.pull--one-quarter, .pull--two-eighths, .pull--three-twelfths {
-  right: 25%; }
-
-.pull--three-quarters, .pull--six-eighths, .pull--nine-twelfths {
-  right: 75%; }
-
-/**
- * Fifths
- */
-.pull--one-fifth, .pull--two-tenths {
-  right: 20%; }
-
-.pull--two-fifths, .pull--four-tenths {
-  right: 40%; }
-
-.pull--three-fifths, .pull--six-tenths {
-  right: 60%; }
-
-.pull--four-fifths, .pull--eight-tenths {
-  right: 80%; }
-
-/**
- * Sixths
- */
-.pull--one-sixth, .pull--two-twelfths {
-  right: 16.666%; }
-
-.pull--five-sixths, .pull--ten-twelfths {
-  right: 83.333%; }
-
-/**
- * Eighths
- */
-.pull--one-eighth {
-  right: 12.5%; }
-
-.pull--three-eighths {
-  right: 37.5%; }
-
-.pull--five-eighths {
-  right: 62.5%; }
-
-.pull--seven-eighths {
-  right: 87.5%; }
-
-/**
- * Tenths
- */
-.pull--one-tenth {
-  right: 10%; }
-
-.pull--three-tenths {
-  right: 30%; }
-
-.pull--seven-tenths {
-  right: 70%; }
-
-.pull--nine-tenths {
-  right: 90%; }
-
-/**
- * Twelfths
- */
-.pull--one-twelfth {
-  right: 8.333%; }
-
-.pull--five-twelfths {
-  right: 41.666%; }
-
-.pull--seven-twelfths {
-  right: 58.333%; }
-
-.pull--eleven-twelfths {
-  right: 91.666%; }
-
-@media only screen and (min-width: 480px) {
-  /**
-   * None
-   */
-  .pull--small--none {
-    right: 0%; }
-
-  /**
-   * Whole
-   */
-  .pull--small--one-whole {
-    right: 100%; }
-
-  /**
-   * Halves
-   */
-  .pull--small--one-half, .pull--small--two-quarters, .pull--small--three-sixths, .pull--small--four-eighths, .pull--small--five-tenths, .pull--small--six-twelfths {
-    right: 50%; }
-
-  /**
-   * Thirds
-   */
-  .pull--small--one-third, .pull--small--two-sixths, .pull--small--four-twelfths {
-    right: 33.333%; }
-
-  .pull--small--two-thirds, .pull--small--four-sixths, .pull--small--eight-twelfths {
-    right: 66.666%; }
-
-  /**
-   * Quarters
-   */
-  .pull--small--one-quarter, .pull--small--two-eighths, .pull--small--three-twelfths {
-    right: 25%; }
-
-  .pull--small--three-quarters, .pull--small--six-eighths, .pull--small--nine-twelfths {
-    right: 75%; }
-
-  /**
-   * Fifths
-   */
-  .pull--small--one-fifth, .pull--small--two-tenths {
-    right: 20%; }
-
-  .pull--small--two-fifths, .pull--small--four-tenths {
-    right: 40%; }
-
-  .pull--small--three-fifths, .pull--small--six-tenths {
-    right: 60%; }
-
-  .pull--small--four-fifths, .pull--small--eight-tenths {
-    right: 80%; }
-
-  /**
-   * Sixths
-   */
-  .pull--small--one-sixth, .pull--small--two-twelfths {
-    right: 16.666%; }
-
-  .pull--small--five-sixths, .pull--small--ten-twelfths {
-    right: 83.333%; }
-
-  /**
-   * Eighths
-   */
-  .pull--small--one-eighth {
-    right: 12.5%; }
-
-  .pull--small--three-eighths {
-    right: 37.5%; }
-
-  .pull--small--five-eighths {
-    right: 62.5%; }
-
-  .pull--small--seven-eighths {
-    right: 87.5%; }
-
-  /**
-   * Tenths
-   */
-  .pull--small--one-tenth {
-    right: 10%; }
-
-  .pull--small--three-tenths {
-    right: 30%; }
-
-  .pull--small--seven-tenths {
-    right: 70%; }
-
-  .pull--small--nine-tenths {
-    right: 90%; }
-
-  /**
-   * Twelfths
-   */
-  .pull--small--one-twelfth {
-    right: 8.333%; }
-
-  .pull--small--five-twelfths {
-    right: 41.666%; }
-
-  .pull--small--seven-twelfths {
-    right: 58.333%; }
-
-  .pull--small--eleven-twelfths {
-    right: 91.666%; } }
-@media only screen and (min-width: 750px) {
-  /**
-   * None
-   */
-  .pull--medium--none {
-    right: 0%; }
-
-  /**
-   * Whole
-   */
-  .pull--medium--one-whole {
-    right: 100%; }
-
-  /**
-   * Halves
-   */
-  .pull--medium--one-half, .pull--medium--two-quarters, .pull--medium--three-sixths, .pull--medium--four-eighths, .pull--medium--five-tenths, .pull--medium--six-twelfths {
-    right: 50%; }
-
-  /**
-   * Thirds
-   */
-  .pull--medium--one-third, .pull--medium--two-sixths, .pull--medium--four-twelfths {
-    right: 33.333%; }
-
-  .pull--medium--two-thirds, .pull--medium--four-sixths, .pull--medium--eight-twelfths {
-    right: 66.666%; }
-
-  /**
-   * Quarters
-   */
-  .pull--medium--one-quarter, .pull--medium--two-eighths, .pull--medium--three-twelfths {
-    right: 25%; }
-
-  .pull--medium--three-quarters, .pull--medium--six-eighths, .pull--medium--nine-twelfths {
-    right: 75%; }
-
-  /**
-   * Fifths
-   */
-  .pull--medium--one-fifth, .pull--medium--two-tenths {
-    right: 20%; }
-
-  .pull--medium--two-fifths, .pull--medium--four-tenths {
-    right: 40%; }
-
-  .pull--medium--three-fifths, .pull--medium--six-tenths {
-    right: 60%; }
-
-  .pull--medium--four-fifths, .pull--medium--eight-tenths {
-    right: 80%; }
-
-  /**
-   * Sixths
-   */
-  .pull--medium--one-sixth, .pull--medium--two-twelfths {
-    right: 16.666%; }
-
-  .pull--medium--five-sixths, .pull--medium--ten-twelfths {
-    right: 83.333%; }
-
-  /**
-   * Eighths
-   */
-  .pull--medium--one-eighth {
-    right: 12.5%; }
-
-  .pull--medium--three-eighths {
-    right: 37.5%; }
-
-  .pull--medium--five-eighths {
-    right: 62.5%; }
-
-  .pull--medium--seven-eighths {
-    right: 87.5%; }
-
-  /**
-   * Tenths
-   */
-  .pull--medium--one-tenth {
-    right: 10%; }
-
-  .pull--medium--three-tenths {
-    right: 30%; }
-
-  .pull--medium--seven-tenths {
-    right: 70%; }
-
-  .pull--medium--nine-tenths {
-    right: 90%; }
-
-  /**
-   * Twelfths
-   */
-  .pull--medium--one-twelfth {
-    right: 8.333%; }
-
-  .pull--medium--five-twelfths {
-    right: 41.666%; }
-
-  .pull--medium--seven-twelfths {
-    right: 58.333%; }
-
-  .pull--medium--eleven-twelfths {
-    right: 91.666%; } }
-@media only screen and (min-width: 999px) {
-  /**
-   * None
-   */
-  .pull--large--none {
-    right: 0%; }
-
-  /**
-   * Whole
-   */
-  .pull--large--one-whole {
-    right: 100%; }
-
-  /**
-   * Halves
-   */
-  .pull--large--one-half, .pull--large--two-quarters, .pull--large--three-sixths, .pull--large--four-eighths, .pull--large--five-tenths, .pull--large--six-twelfths {
-    right: 50%; }
-
-  /**
-   * Thirds
-   */
-  .pull--large--one-third, .pull--large--two-sixths, .pull--large--four-twelfths {
-    right: 33.333%; }
-
-  .pull--large--two-thirds, .pull--large--four-sixths, .pull--large--eight-twelfths {
-    right: 66.666%; }
-
-  /**
-   * Quarters
-   */
-  .pull--large--one-quarter, .pull--large--two-eighths, .pull--large--three-twelfths {
-    right: 25%; }
-
-  .pull--large--three-quarters, .pull--large--six-eighths, .pull--large--nine-twelfths {
-    right: 75%; }
-
-  /**
-   * Fifths
-   */
-  .pull--large--one-fifth, .pull--large--two-tenths {
-    right: 20%; }
-
-  .pull--large--two-fifths, .pull--large--four-tenths {
-    right: 40%; }
-
-  .pull--large--three-fifths, .pull--large--six-tenths {
-    right: 60%; }
-
-  .pull--large--four-fifths, .pull--large--eight-tenths {
-    right: 80%; }
-
-  /**
-   * Sixths
-   */
-  .pull--large--one-sixth, .pull--large--two-twelfths {
-    right: 16.666%; }
-
-  .pull--large--five-sixths, .pull--large--ten-twelfths {
-    right: 83.333%; }
-
-  /**
-   * Eighths
-   */
-  .pull--large--one-eighth {
-    right: 12.5%; }
-
-  .pull--large--three-eighths {
-    right: 37.5%; }
-
-  .pull--large--five-eighths {
-    right: 62.5%; }
-
-  .pull--large--seven-eighths {
-    right: 87.5%; }
-
-  /**
-   * Tenths
-   */
-  .pull--large--one-tenth {
-    right: 10%; }
-
-  .pull--large--three-tenths {
-    right: 30%; }
-
-  .pull--large--seven-tenths {
-    right: 70%; }
-
-  .pull--large--nine-tenths {
-    right: 90%; }
-
-  /**
-   * Twelfths
-   */
-  .pull--large--one-twelfth {
-    right: 8.333%; }
-
-  .pull--large--five-twelfths {
-    right: 41.666%; }
-
-  .pull--large--seven-twelfths {
-    right: 58.333%; }
-
-  .pull--large--eleven-twelfths {
-    right: 91.666%; } }
-@media only screen and (min-width: 1199px) {
-  /**
-   * None
-   */
-  .pull--extralarge--none {
-    right: 0%; }
-
-  /**
-   * Whole
-   */
-  .pull--extralarge--one-whole {
-    right: 100%; }
-
-  /**
-   * Halves
-   */
-  .pull--extralarge--one-half, .pull--extralarge--two-quarters, .pull--extralarge--three-sixths, .pull--extralarge--four-eighths, .pull--extralarge--five-tenths, .pull--extralarge--six-twelfths {
-    right: 50%; }
-
-  /**
-   * Thirds
-   */
-  .pull--extralarge--one-third, .pull--extralarge--two-sixths, .pull--extralarge--four-twelfths {
-    right: 33.333%; }
-
-  .pull--extralarge--two-thirds, .pull--extralarge--four-sixths, .pull--extralarge--eight-twelfths {
-    right: 66.666%; }
-
-  /**
-   * Quarters
-   */
-  .pull--extralarge--one-quarter, .pull--extralarge--two-eighths, .pull--extralarge--three-twelfths {
-    right: 25%; }
-
-  .pull--extralarge--three-quarters, .pull--extralarge--six-eighths, .pull--extralarge--nine-twelfths {
-    right: 75%; }
-
-  /**
-   * Fifths
-   */
-  .pull--extralarge--one-fifth, .pull--extralarge--two-tenths {
-    right: 20%; }
-
-  .pull--extralarge--two-fifths, .pull--extralarge--four-tenths {
-    right: 40%; }
-
-  .pull--extralarge--three-fifths, .pull--extralarge--six-tenths {
-    right: 60%; }
-
-  .pull--extralarge--four-fifths, .pull--extralarge--eight-tenths {
-    right: 80%; }
-
-  /**
-   * Sixths
-   */
-  .pull--extralarge--one-sixth, .pull--extralarge--two-twelfths {
-    right: 16.666%; }
-
-  .pull--extralarge--five-sixths, .pull--extralarge--ten-twelfths {
-    right: 83.333%; }
-
-  /**
-   * Eighths
-   */
-  .pull--extralarge--one-eighth {
-    right: 12.5%; }
-
-  .pull--extralarge--three-eighths {
-    right: 37.5%; }
-
-  .pull--extralarge--five-eighths {
-    right: 62.5%; }
-
-  .pull--extralarge--seven-eighths {
-    right: 87.5%; }
-
-  /**
-   * Tenths
-   */
-  .pull--extralarge--one-tenth {
-    right: 10%; }
-
-  .pull--extralarge--three-tenths {
-    right: 30%; }
-
-  .pull--extralarge--seven-tenths {
-    right: 70%; }
-
-  .pull--extralarge--nine-tenths {
-    right: 90%; }
-
-  /**
-   * Twelfths
-   */
-  .pull--extralarge--one-twelfth {
-    right: 8.333%; }
-
-  .pull--extralarge--five-twelfths {
-    right: 41.666%; }
-
-  .pull--extralarge--seven-twelfths {
-    right: 58.333%; }
-
-  .pull--extralarge--eleven-twelfths {
-    right: 91.666%; } }
 * {
   margin: 0;
   padding: 0;
@@ -1855,7 +1324,7 @@ h2 {
   margin-bottom: 2em;
   display: block; }
 
-button {
+.button {
   padding: .5em;
   border-width: 1px;
   border-color: #784213;
@@ -1866,7 +1335,19 @@ button {
   font-size: 18px;
   /*Base font size=18pt=24px !Edited to 18px*/
   color: #784213;
-  /*light brown*/ }
+  /*light brown*/
+  text-align: center; }
+
+#login {
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  /*Base font size=18pt=24px !Edited to 18px*/
+  color: #784213;
+  /*light brown*/
+  text-align: center; }
+
+a {
+  text-decoration: none; }
 
 input {
   padding: .5em;
@@ -1879,7 +1360,8 @@ input {
   font-size: 18px;
   /*Base font size=18pt=24px !Edited to 18px*/
   color: #784213;
-  /*light brown*/ }
+  /*light brown*/
+  width: 100%; }
 
 #bluebutton {
   background-color: #0047b2;
@@ -1893,15 +1375,15 @@ input {
 
 #message {
   background-color: #fde1a2;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
   margin-left: auto;
   margin-right: auto; }
 
 #atobparent {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
 
 #atobparent img {
   height: auto;
@@ -1915,14 +1397,15 @@ input {
 
 #socialproof {
   background-color: #0047b2;
-  padding-top: 2em; }
+  padding-top: 1em; }
 
 .headshot img {
-  height: 100%;
-  width: 100%; }
+  width: 50%;
+  display: block;
+  margin: 0 auto; }
 
 .socialtext {
-  margin: 1.5em 1.5em 2em 1.5em;
+  margin: 1em 1.5em 1em 1.5em;
   text-align: center; }
 
 .socialtext p {
