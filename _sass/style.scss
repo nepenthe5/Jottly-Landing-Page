@@ -68,12 +68,12 @@ h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
   color: #784213; /*light brown*/
   text-align: center;
 }
-#login {
-  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px; /*Base font size=18pt=24px !Edited to 18px*/
-  color: #784213; /*light brown*/
-  text-align: center;
-}
+// #login {
+//   font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+//   font-size: 18px; /*Base font size=18pt=24px !Edited to 18px*/
+//   color: #784213; /*light brown*/
+//   text-align: center;
+//}
 a {
   text-decoration: none;
 }
@@ -213,10 +213,16 @@ footer h2 {
 // ***************************** //
 // ***************************** //
 @media only screen and (min-width: $small) {
-  #logo img {  // Puts logo all the way to the left of div
-    margin-left: 2em;
+  // HEADER
+  #logo img {  // Makes logo img not centered
+    margin-left: 0;
     margin-right: 0;
+    width: 100%; //Change to this in default?
   }
+  .floatright { // Here floats login grid__item to right
+    float: right;
+  }
+  // FEATURES
   #macbook { // Start displaying macbook at $small
     display: block;
     //margin-left: 1em;
@@ -227,11 +233,11 @@ footer h2 {
   #macbook img {
     height: auto;
     width: 90%;
-    margin: 0 1.5em 4em 1.5em;
+    margin: 0 1.5em 1em 1.5em;
   }
 }
 @media only screen and (min-width: $medium) {
-  // Whole page
+  // WHOLE PAGE
   .wrapper {   
     margin: 0 auto 0 auto;
     max-width: 960px; 

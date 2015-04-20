@@ -1338,14 +1338,6 @@ h2 {
   /*light brown*/
   text-align: center; }
 
-#login {
-  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
-  /*Base font size=18pt=24px !Edited to 18px*/
-  color: #784213;
-  /*light brown*/
-  text-align: center; }
-
 a {
   text-decoration: none; }
 
@@ -1470,8 +1462,12 @@ footer h2 {
 
 @media only screen and (min-width: 480px) {
   #logo img {
-    margin-left: 2em;
-    margin-right: 0; }
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%; }
+
+  .floatright {
+    float: right; }
 
   #macbook {
     display: block;
@@ -1480,7 +1476,7 @@ footer h2 {
   #macbook img {
     height: auto;
     width: 90%;
-    margin: 0 1.5em 4em 1.5em; } }
+    margin: 0 1.5em 1em 1.5em; } }
 @media only screen and (min-width: 750px) {
   .wrapper {
     margin: 0 auto 0 auto;
