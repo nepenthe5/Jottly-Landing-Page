@@ -1,7 +1,7 @@
 @import  "csswizardry-grids";
 
 $small: 480px;
-$medium: 750px;
+$medium: 700px;
 $gutter: 20px;
 
 * {margin:0;padding:0;box-sizing:border-box;}
@@ -275,12 +275,16 @@ footer h2 {
 }
 @media only screen and (min-width: $medium) {
   // WHOLE PAGE
-  .wrapper {   
-    margin: 0 auto 0 auto;
-    max-width: 960px; 
-    position: relative;
-  }
+  //--------------------------Use below for large wrapper?---------?
+  // .wrapper {   
+  //   margin: 0 auto 0 auto;
+  //   max-width: 960px; 
+  //   position: relative;
+  // }
   // HEADER
+  header { // Background image
+    min-height: 600px;
+  }
   #logo img { //takes margin off left of logo at medium
     margin-left: 0;
     width: 100%; //logo takes up 100% of one-sixth space
