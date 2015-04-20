@@ -214,6 +214,9 @@ footer h2 {
 // ***************************** //
 @media only screen and (min-width: $small) {
   // HEADER
+  header { // Background image
+    background-position: 0 0;
+  }
   #logo img {  // Makes logo img not centered
     margin-left: 0;
     margin-right: 0;
@@ -222,7 +225,37 @@ footer h2 {
   .floatright { // Here floats login grid__item to right
     float: right;
   }
+  #main-headline h1{
+    text-align: left;
+    font-size: 1.2em;
+  }
+  #main-text {
+    text-align: left;
+    font-size: .9em;
+  }
+  #main-text p {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 50%;
+  }
+  #bluebutton {
+    margin-top: 0;
+  }
+  // SOCIAL PROOF
+  .headshot img {
+    width: 60%;
+  }
   // FEATURES
+  #featurepic1 {
+    width: 55%;
+  }
+  #featurepic2 {
+    width: 24%;
+  } 
+  #featurepic3 {
+    width: 34%
+  }
   #macbook { // Start displaying macbook at $small
     display: block;
     //margin-left: 1em;
@@ -234,6 +267,10 @@ footer h2 {
     height: auto;
     width: 90%;
     margin: 0 1.5em 1em 1.5em;
+  }
+  // FOOTER
+  #yellowbutton {
+    margin-top: 0;
   }
 }
 @media only screen and (min-width: $medium) {
