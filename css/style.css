@@ -1553,12 +1553,25 @@ footer h2 {
     margin-left: auto;
     margin-right: auto; }
 
+  #message {
+    padding-top: 8.611em;
+    padding-bottom: 8.611em; }
+
   #message h1 {
     font-size: 2.2em; }
+
+  #atobparent {
+    margin-bottom: 8.611em; }
 
   #atobparent img {
     max-width: 662px;
     width: 100%; }
+
+  #socialproof {
+    padding-top: 4em; }
+
+  .socialtext {
+    margin: 1em 0 4em 0; }
 
   .featureparent {
     text-align: center; }
@@ -1567,13 +1580,26 @@ footer h2 {
     margin: 0 auto 0 auto; }
 
   #features h1 {
-    font-size: 2.2em; }
+    font-size: 2.2em;
+    margin-top: 4em;
+    margin-bottom: 1.5em; }
 
   .featuretext {
-    margin: 1em 1em 1em 1em; }
+    margin: 1em .7em 2.222em .7em; }
+
+  .featuretext h2 {
+    margin-bottom: .5em;
+    font-size: 1.9em; }
+
+  #macbook img {
+    margin: 0 1.5em 4em 1.5em; }
 
   footer h2 {
-    font-size: 1.7em; } }
+    font-size: 1.7em;
+    margin-top: 4em; }
+
+  #copyright p {
+    margin-bottom: 4em; } }
 @media only screen and (min-width: 960px) {
   .wrapper {
     margin: 0 auto 0 auto;
@@ -1589,45 +1615,16 @@ footer h2 {
   #main-text, h3 {
     font-size: 1.2em; }
 
-  #message {
-    padding-top: 8.611em;
-    padding-bottom: 8.611em; }
-
-  #atobparent {
-    margin-bottom: 8.611em; }
-
   #atobparent img {
     max-width: none; }
 
   #message h1 {
     font-size: 2.9em; }
 
-  #socialproof {
-    padding-top: 4em; }
-
-  .socialtext {
-    margin: 1em 1.5em 4em 1.5em; }
-
   #features h1 {
-    margin-top: 4em;
-    margin-bottom: 1.5em;
     font-size: 2.9em; }
 
-  .featuretext h2 {
-    margin-bottom: .5em;
-    font-size: 1.9em; }
-
-  .featuretext {
-    margin: 1em 1em 2.222em 1em; }
-
-  #macbook img {
-    margin: 0 1.5em 4em 1.5em; }
-
   footer h2 {
-    margin-top: 4em;
-    font-size: 1.9em; }
-
-  #copyright p {
-    margin-bottom: 4em; } }
+    font-size: 1.9em; } }
 
 /*# sourceMappingURL=style.css.map */
