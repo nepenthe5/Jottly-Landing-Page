@@ -1522,7 +1522,8 @@ footer h2 {
 
   #main-headline h1 {
     font-size: 2.2em;
-    text-align: left; }
+    text-align: left;
+    margin: 3em auto 0 auto; }
 
   #main-text, h3 {
     text-align: left;
@@ -1537,6 +1538,11 @@ footer h2 {
   #message h1 {
     font-size: 2.2em; }
 
+  #atobparent img {
+    max-width: 662px;
+    width: 100%; }
+
+  /* width: 90%; */
   .featureparent {
     text-align: center; }
 
@@ -1545,6 +1551,9 @@ footer h2 {
 
   #features h1 {
     font-size: 2.2em; }
+
+  .featuretext {
+    margin: 1em 1em 1em 1em; }
 
   footer h2 {
     font-size: 1.7em; } }
