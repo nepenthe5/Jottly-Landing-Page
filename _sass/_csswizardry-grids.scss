@@ -107,7 +107,7 @@ $pull:                  false !default;
 $breakpoints: (
     'small' '(min-width: 480px)',
     'medium' '(min-width: 700px)',
-    'large' '(min-width: 999px)',
+    'large' '(min-width: 960px)',
     'extralarge' '(min-width: 1199px)'
 ) !default;
 
