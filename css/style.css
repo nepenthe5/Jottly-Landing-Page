@@ -1492,7 +1492,7 @@ footer h2 {
 
   #main-headline h1 {
     text-align: left;
-    font-size: 1.2em; }
+    font-size: 1.3em; }
 
   #main-text {
     text-align: left;
@@ -1507,8 +1507,17 @@ footer h2 {
   #bluebutton {
     margin-top: 0; }
 
+  #message h1 {
+    font-size: 1.3em; }
+
   .headshot img {
     width: 60%; }
+
+  #features h1 {
+    font-size: 1.3em; }
+
+  .featuretext h2 {
+    font-size: 1.1em; }
 
   #featurepic1 {
     width: 55%; }
@@ -1581,11 +1590,11 @@ footer h2 {
 
   #features h1 {
     font-size: 2.2em;
-    margin-top: 4em;
+    margin-top: 1.5em;
     margin-bottom: 1.5em; }
 
   .featuretext {
-    margin: 1em .7em 2.222em .7em; }
+    margin: 1em 0 2.222em 0; }
 
   .featuretext h2 {
     margin-bottom: .5em;
@@ -1596,11 +1605,11 @@ footer h2 {
 
   footer h2 {
     font-size: 1.7em;
-    margin-top: 4em; }
+    margin-top: 2em; }
 
   #copyright p {
     margin-bottom: 4em; } }
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 999px) {
   .wrapper {
     margin: 0 auto 0 auto;
     max-width: 960px;
