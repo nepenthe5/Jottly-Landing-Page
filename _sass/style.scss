@@ -1,0 +1,410 @@
+@import  "csswizardry-grids";
+
+$small: 480px;
+$medium: 700px;
+$large: 999px;
+$gutter: 20px;
+
+* {margin:0;padding:0;box-sizing:border-box;}
+body {
+    background: #fff;
+    font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px; /*Base font size=18pt=24px !Edited to 18px*/
+    color: #784213; /*light brown*/
+}
+// HEADER
+header {
+  background: #fff url(../images/heroimage3.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: -30px 0;
+  //min-height: 900px; //900px at max in Media Query, smaller at mobile?
+}
+#top-header {
+    padding-top: 1em;
+}
+#main-headline {
+  margin: 0 auto 0 auto;
+}
+#main-headline h1{
+  font-size: 1.5em;/*Main headers=52pt=52px=2.8888em at large?*/
+  color: #663f1c;/*dark brown*/
+  font-weight: bold;
+  margin: 1em auto 0 auto;
+  text-align: center;
+}
+h2 { /*subheadings in //FEATURES and question at top of //FOOTER*/
+  font-size: 1.2em; //At large=2.222em
+  color: #784213; /*light brown*/
+}
+#main-text, h3 { /*subheader in //HEADER AKA class .main-text*/
+  font-size: 1em; //At large=1.5555em
+  color: #784213; /*light brown*/
+  margin: 1em 0 1em 0;
+  text-align: center;
+}
+#main-text p {
+  text-align: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#logo img {
+  height: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  display: block;
+}
+.button {
+  padding: .5em;
+  border-width: 1px;
+  border-color: rgb(120, 66, 19);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px; /*Base font size=18pt=24px !Edited to 18px*/
+  color: #784213; /*light brown*/
+  text-align: center;
+}
+.button:hover {
+  background-color: #E56C17;
+  color: #fff;
+  border-color: #fff;
+  transition-duration: .2s;
+}
+a {
+  text-decoration: none;
+}
+input {
+  padding: .5em;
+  border-width: 1px;
+  border-color: rgb(120, 66, 19);
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px; /*Base font size=18pt=24px !Edited to 18px*/
+  color: #784213; /*light brown*/
+  width: 100%
+}
+#bluebutton {
+  background-color: #0047b2;
+  color: #fff;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#bluebutton:hover {
+  background-color: #E56C17;
+  color: #fff;
+  border-color: #fff;
+  transition-duration: .2s;
+}
+#yellowbutton {
+  background-color: #ffff99;
+  margin-top: 1em;
+}
+#yellowbutton:hover {
+  background-color: #E56C17;
+  color: #fff;
+  border-color: #fff;
+  transition-duration: .2s;
+}
+// Message Section
+#message {
+  background-color: #fde1a2;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+#atobparent {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+#atobparent img {
+  height: auto;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#message h1 {
+  text-align: center;
+}
+// Social Proof Section
+#socialproof {
+  background-color: #0047b2;
+  padding-top: 1em;
+}
+.headshot img{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+}
+.socialtext {
+  margin: 1em 1.5em 1em 1.5em;
+  text-align: center;
+}
+.socialtext p{
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.firstsocialp {
+  margin-bottom: 1em;
+}
+// Features
+#features h1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.featuretext {
+  margin: 1em 1.5em 1em 1.5em;
+  text-align: center;
+}
+.featuretext h2 {
+  margin-bottom: 1em;
+}
+.featureparent img {
+  height: auto;
+  //width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center; //For alt
+}
+#featurepic1 {
+  width: 45%;
+}
+#featurepic2 {
+  width: 20%;
+}
+#featurepic3 {
+  width: 28.5%
+}
+#macbook {
+  display: none;
+}
+// Footer
+footer {
+  background-color: #0047b2;
+  color: #fff;
+  text-align: center;
+}
+footer h2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #fff;
+  text-align: center;
+}
+#copyright {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.wrapper {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+// .clearfix:after{
+//   visibility: hidden;
+//   display: block;
+//   content: " ";
+//   clear: both;
+//   height: 0;
+//   font-size: 0;
+// }
+// ***************************** //
+// ***************************** //
+// ********Media Queries******** //
+// ***************************** //
+// ***************************** //
+//-----SMALL-----//
+@media only screen and (min-width: $small) {
+  // HEADER
+  header { // Background image
+    background-position: 0 0;
+  }
+  #logo img {  // Makes logo img not centered
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%; //Change to this in default?
+  }
+  .floatright { // Here floats login grid__item to right
+    float: right;
+  }
+  #main-headline h1{
+    text-align: left;
+    font-size: 1.3em;
+  }
+  #main-text {
+    text-align: left;
+    font-size: .9em;
+  }
+  #main-text p {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 55%;
+  }
+  #bluebutton {
+    margin-top: 0;
+  }
+  // MESSAGE
+  #message h1 {
+    font-size: 1.3em;
+  }
+  // SOCIAL PROOF
+  .headshot img {
+    width: 60%;
+  }
+  // FEATURES
+  #features h1 {
+    font-size: 1.3em;
+  }
+  .featuretext h2 {
+    font-size: 1.1em;
+  }
+  #featurepic1 {
+    width: 55%;
+  }
+  #featurepic2 {
+    width: 24%;
+  } 
+  #featurepic3 {
+    width: 34%
+  }
+  #macbook { // Start displaying macbook at $small
+    display: block;
+    text-align: center; //centers macbook jpeg
+  }
+  #macbook img {
+    height: auto;
+    width: 90%;
+    margin: 0 1.5em 1em 1.5em;
+  }
+  // FOOTER
+  #yellowbutton {
+    margin-top: 0;
+  }
+}
+//-----MEDIUM-----//
+@media only screen and (min-width: $medium) {
+  // HEADER
+  header { // Background image
+    min-height: 600px;
+  }
+  #logo img { //takes margin off left of logo at medium
+    margin-left: 0;
+    width: 100%; //logo takes up 100% of one-sixth space
+  }
+  #main-headline h1 {
+    font-size: 2.2em;
+    text-align: left;
+    margin: 3em auto 0 auto;
+  }
+  #main-text, h3 {
+    text-align: left;
+    font-size: 1.1em;
+  }
+  #main-text p {
+    text-align: left;
+    width: 100%; 
+    margin-left: auto; 
+    margin-right: auto; 
+  }
+  // MESSAGE
+  #message {
+    padding-top: 8.611em;
+    padding-bottom: 8.611em;
+  }
+  #message h1 {
+    font-size: 2.2em;
+  }
+  #atobparent {
+    margin-bottom: 8.611em;
+  }
+  #atobparent img { 
+    max-width: 662px;
+    width: 100%;
+  }
+  // SOCIAL PROOF
+  #socialproof {
+    padding-top: 4em;
+  }
+  .socialtext {
+    margin: 1em 0 4em 0;
+  }
+  // FEATURES
+  .featureparent {
+    text-align: center;
+  }
+  #metafeaturep {
+    margin: 0 auto 0 auto;
+  }
+  #features h1 {
+    font-size: 2.2em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  .featuretext {
+    margin: 1em 0 2.222em 0;
+  }
+  .featuretext h2 {
+    margin-bottom: .5em;
+    font-size: 1.9em;
+  } 
+  #macbook img {
+    margin: 0 1.5em 4em 1.5em;
+  }
+  // FOOTER
+  footer h2 {
+    font-size: 1.7em;
+    margin-top: 2em;
+  }
+  #copyright p {
+    margin-bottom: 4em;
+  }
+}
+//-----LARGE-----//
+@media only screen and (min-width: $large) {
+  // WHOLE PAGE
+  .wrapper {   
+    margin: 0 auto 0 auto;
+    max-width: 960px; 
+    position: relative;
+  }
+  // HEADER
+  header { // Background image
+    min-height: 745px;
+  }
+  #main-headline h1 {
+    font-size: 2.9em;
+  }
+  #main-text, h3 {
+    font-size: 1.2em;
+  }
+  // MESSAGE
+  #atobparent img {
+    max-width: none;
+  }
+  #message h1 {
+    font-size: 2.9em; //--New Header font-size! (=52px)--//
+  }
+  // FEATURES
+  #features h1 {
+    font-size: 2.9em;
+  }
+  .featuretext {
+
+  }
+  // FOOTER
+  footer h2 {
+    font-size: 1.9em;
+  }
+}
